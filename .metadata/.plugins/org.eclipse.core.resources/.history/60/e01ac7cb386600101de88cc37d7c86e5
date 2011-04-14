@@ -1,0 +1,14 @@
+package Codemeditation.DroidBoard;
+
+import roboguice.config.AbstractAndroidModule;
+
+public class ConfigModule extends AbstractAndroidModule   {
+
+	@Override
+	protected void configure() {
+		bind(IKanbanApi.class).to(AgilezenApi.class);
+		
+	}
+
+
+}

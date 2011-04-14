@@ -1,0 +1,12 @@
+package DroidBoardTest;
+
+
+import org.junit.Before;
+
+public class DroidBoardTest {
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+}
