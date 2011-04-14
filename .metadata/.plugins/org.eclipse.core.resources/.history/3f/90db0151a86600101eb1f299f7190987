@@ -1,0 +1,20 @@
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import Codemeditation.DroidBoard.ProjectlistActivity;
+
+import com.xtremelabs.robolectric.RobolectricTestRunner;
+
+@RunWith(RobolectricTestRunner.class)
+public class projectlistTest {
+	private ProjectlistActivity activity;
+
+	public void setup() throws Exception {
+		activity = new ProjectlistActivity();
+	}
+	
+    @Test
+    public void shouldShowProjectListTitle() throws Exception {
+    	
+    }
+}

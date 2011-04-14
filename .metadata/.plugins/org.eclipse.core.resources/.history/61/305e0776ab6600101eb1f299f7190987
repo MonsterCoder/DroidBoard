@@ -1,0 +1,27 @@
+import static org.junit.Assert.assertThat;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import Codemeditation.DroidBoard.ProjectlistActivity;
+import Codemeditation.DroidBoard.R;
+import android.widget.TextView;
+
+import com.xtremelabs.robolectric.RobolectricTestRunner;
+
+@RunWith(RobolectricTestRunner.class)
+public class projectlistTest {
+	private ProjectlistActivity projectlist_activity;
+	private TextView projectlist_title;
+
+	public void setup() throws Exception {
+		projectlist_activity = new ProjectlistActivity();
+		projectlist_activity.onCreate(null);
+		projectlist_title = ((TextView)projectlist_activity.findViewById(R.id.projectlist_title));
+	}
+	
+    @Test
+    public void shouldShowProjectListTitle() throws Exception {
+    	assert(projectlist_title.getText().equals("ggg"));
+    }
+}
