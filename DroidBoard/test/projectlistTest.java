@@ -4,12 +4,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import com.google.inject.Inject;
-
 import Codemeditation.DroidBoard.IKanbanApi;
 import Codemeditation.DroidBoard.ProjectlistActivity;
 import Codemeditation.DroidBoard.R;
 import android.widget.TextView;
+
+import com.google.inject.Inject;
 
 @RunWith(GuiceTestRunner.class)
 public class projectlistTest {
@@ -20,13 +20,16 @@ public class projectlistTest {
 	
 	@Before
 	public void setup() throws Exception {
+		org.mockito.Mockito.when(mockKanbanApi.GetProjectsCount()).thenReturn(3);
+		
 		projectlist_activity = new ProjectlistActivity();
 		projectlist_activity.onCreate(null);
 		projectlist_title = ((TextView)projectlist_activity.findViewById(R.id.projectlist_title));
-	}
+
+	};
 	
     @Test
-    public void shouldShowProjectListTitle() throws Exception {
-    	assertTrue(projectlist_title.getText().equals("0 active projects"));
+    public void should_show_project_List_title() throws Exception {
+    	assertTrue(projectlist_title.getText().equals("3 active projects"));
     }
 }

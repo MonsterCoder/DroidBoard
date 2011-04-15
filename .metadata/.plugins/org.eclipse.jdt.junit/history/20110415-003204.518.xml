@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="robolectricTestConfiguration" project="DroidBoardTest" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="projectlistTest" time="1.471">
+    <testcase name="shouldShowProjectListTitle" classname="projectlistTest" time="1.471"/>
+  </testsuite>
+</testrun>

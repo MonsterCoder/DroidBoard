@@ -18,9 +18,9 @@ public class GuiceTestRunner extends RobolectricTestRunner {
 	
 	@Override
 	protected Application createApplication() {
-		// TODO Auto-generated method stub
-		DroidBoardApplication application = (DroidBoardApplication)super.createApplication();
 		
+		DroidBoardApplication application = (DroidBoardApplication)super.createApplication();
+		application.SetModule(new TestRunnerConfigurationModule());
 		return application;
 	}
 	

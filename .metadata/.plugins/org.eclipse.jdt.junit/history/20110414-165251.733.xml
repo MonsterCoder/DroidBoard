@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="robolectricTestConfiguration" project="DroidBoardTest" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="projectlistTest" time="0.697">
+    <testcase name="shouldShowProjectListTitle" classname="projectlistTest" time="0.697">
+      <error>com.google.inject.CreationException: Guice creation errors:
+
+1) No implementation for Codemeditation.DroidBoard.IKanbanApi was bound.
+  at TestRunnerConfigurationModule.configure(TestRunnerConfigurationModule.java:9)
+
+1 error
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:354)
+	at com.google.inject.InjectorBuilder.initializeStatically(InjectorBuilder.java:152)
+	at com.google.inject.InjectorBuilder.build(InjectorBuilder.java:105)
+	at com.google.inject.Guice.createInjector(Guice.java:92)
+	at roboguice.application.RoboApplication.createInjector(RoboApplication.java:146)
+	at roboguice.application.RoboApplication.getInjector(RoboApplication.java:84)
+	at GuiceTestRunner.prepareTest(GuiceTestRunner.java:31)
+	at com.xtremelabs.robolectric.RobolectricTestRunner.createTest(RobolectricTestRunner.java:259)
+	at com.xtremelabs.robolectric.RobolectricTestRunner.createTest(RobolectricTestRunner.java:256)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:258)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:255)
+	at com.xtremelabs.robolectric.RobolectricTestRunner.methodBlock(RobolectricTestRunner.java:201)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

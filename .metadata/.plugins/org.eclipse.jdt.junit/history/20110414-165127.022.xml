@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="robolectricTestConfiguration" project="DroidBoardTest" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="projectlistTest" time="0.356">
+    <testcase name="shouldShowProjectListTitle" classname="projectlistTest" time="0.355">
+      <error>java.lang.Error: Unresolved compilation problem: 
+	The import TestRunnerConfigurationModule cannot be resolved
+
+	at Codemeditation.DroidBoard.DroidBoardApplication.&lt;init&gt;(DroidBoardApplication.java:3)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:532)
+	at java.lang.Class.newInstance0(Class.java:372)
+	at java.lang.Class.newInstance(Class.java:325)
+	at com.xtremelabs.robolectric.ApplicationResolver.newApplicationInstance(ApplicationResolver.java:40)
+	at com.xtremelabs.robolectric.ApplicationResolver.resolveApplication(ApplicationResolver.java:22)
+	at com.xtremelabs.robolectric.RobolectricTestRunner.createApplication(RobolectricTestRunner.java:300)
+	at GuiceTestRunner.createApplication(GuiceTestRunner.java:22)
+	at com.xtremelabs.robolectric.RobolectricTestRunner.setupApplicationState(RobolectricTestRunner.java:276)
+	at com.xtremelabs.robolectric.RobolectricTestRunner.internalBeforeTest(RobolectricTestRunner.java:219)
+	at com.xtremelabs.robolectric.RobolectricTestRunner.methodBlock(RobolectricTestRunner.java:199)
+	at org.junit.runners.BlockJUnit4ClassRunner.runNotIgnored(BlockJUnit4ClassRunner.java:79)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:71)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:49)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:193)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:52)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:191)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:42)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:184)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:236)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:46)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)
+
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

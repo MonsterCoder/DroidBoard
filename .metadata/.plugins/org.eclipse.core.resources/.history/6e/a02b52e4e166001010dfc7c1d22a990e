@@ -1,0 +1,28 @@
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import Codemeditation.DroidBoard.ProjectlistActivity;
+import Codemeditation.DroidBoard.R;
+import android.widget.TextView;
+
+@RunWith(GuiceTestRunner.class)
+public class projectlistTest {
+	private ProjectlistActivity projectlist_activity;
+	private TextView projectlist_title;
+
+	
+	@Before
+	public void setup() throws Exception {
+		projectlist_activity = new ProjectlistActivity();
+		projectlist_activity.onCreate(null);
+		projectlist_title = ((TextView)projectlist_activity.findViewById(R.id.projectlist_title));
+	}
+	
+    @Test
+    public void shouldShowProjectListTitle() throws Exception {
+    	assertTrue(projectlist_title.getText().equals("0 active projects"));
+    }
+}

@@ -1,0 +1,13 @@
+import Codemeditation.DroidBoard.IKanbanApi;
+import roboguice.config.AbstractAndroidModule;
+
+
+public class TestRunnerConfigurationModule extends AbstractAndroidModule {
+
+	@Override
+	protected void configure() {
+
+		
+	}
+
+}
