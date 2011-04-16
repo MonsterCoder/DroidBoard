@@ -42,7 +42,6 @@ public class AgilezenApiTest {
 	
 	@Test
 	public void It_should_return_collection_of_projects() {
-		/// change to sequence compare later
 		assertTrue(sut.GetProjects().size() == 7);
 	}
 	
