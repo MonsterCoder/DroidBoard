@@ -3,18 +3,16 @@ package Codemeditation.AgilezenApi;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Type;
-import java.util.Collection;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 
-import Codemeditation.Domain.Project;
+import Codemeditation.Domain.ProjectsPage;
+import android.util.Log;
 
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import com.google.inject.Inject;
 
 public class AgilezenApi implements IKanbanApi {
@@ -42,12 +40,14 @@ public class AgilezenApi implements IKanbanApi {
 			}
 			
 			in.close();
+			/// Log.d("project page", sb.toString());
 			
-//			Gson gson = new Gson();
-//			
+			Gson  gson = new Gson();
+			ProjectsPage  page = gson.fromJson(sb.toString(), ProjectsPage.class);
+		
 //			Type collectionType = new TypeToken<Collection<Project>>() {}.getType();
 //			Collection<Project> projects = gson.fromJson(sb.toString(), collectionType);
-//			return projects.size();
+			return page.items.size();
 			
 		} catch (ClientProtocolException e) {
 			// TODO Auto-generated catch block

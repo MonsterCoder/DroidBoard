@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 1 elements(s) to &apos;Kanban.AgilezenApi/src/Codemeditation.Domain&apos;&#x0A;- Original project: &apos;Kanban.AgilezenApi&apos;&#x0A;- Destination element: &apos;Kanban.AgilezenApi/src/Codemeditation.Domain&apos;&#x0A;- Original element: &apos;Codemeditation.AgilezenApi.ProjectsPage.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;Codemeditation.Domain" element1="/src&lt;Codemeditation.AgilezenApi{ProjectsPage.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1302967401318" units="1" version="1.0"/>
+</session>

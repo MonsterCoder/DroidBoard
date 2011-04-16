@@ -1,6 +1,6 @@
 package Codemeditation.Domain;
 
-import java.util.Date;
+import java.util.List;
 
 public class Project {
 	public String description;
@@ -8,5 +8,7 @@ public class Project {
 	public int id;
 	
 	public String name;
+	
+	public Person owner;
 	
 }
