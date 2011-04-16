@@ -27,10 +27,8 @@ public class AgilezenApiTest {
 		HttpClient client =  org.mockito.Mockito.mock(HttpClient.class);
 		HttpResponse mockResponse  =  org.mockito.Mockito.mock(HttpResponse.class);
 		
-		TypeArgumentMatcher<HttpGet> clientmatch = new TypeArgumentMatcher(HttpGet.class);
 		org.mockito.Mockito.when(client.execute(org.mockito.Mockito.argThat(clientmatch))).thenReturn(mockResponse);
 		
-	
 		HttpEntity mockEntity = org.mockito.Mockito.mock(HttpEntity.class);
 		org.mockito.Mockito.when(mockResponse.getEntity()).thenReturn(mockEntity);
 		

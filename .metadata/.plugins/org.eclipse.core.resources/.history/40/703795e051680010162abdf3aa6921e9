@@ -1,0 +1,12 @@
+package Codemeditation.AgilezenApi;
+
+import java.io.InputStream;
+
+public class JsonFactory implements IJsonFactory {
+
+	public String Read(InputStream stream) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,33 @@
+
+import static org.junit.Assert.assertTrue;
+
+import org.apache.http.client.HttpClient;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import Codemeditation.AgilezenApi.AgilezenApi;
+
+import com.xtremelabs.robolectric.RobolectricTestRunner;
+
+@RunWith(RobolectricTestRunner.class)
+public class AgilezenApiTest {
+	AgilezenApi sut;
+	
+	@Before
+	public void Setup() {
+		HttpClient client =  org.mockito.Mockito.mock(HttpClient.class);
+		
+		sut = new AgilezenApi(client);
+	}
+	
+	@Test
+	public void It_should_return_collection_of_projects() {
+		assertTrue(sut.GetProjectsCount() == 7);
+	}
+	
+	@Test
+	public void It_should_return_projects_count() {
+		
+	}
+}

@@ -28,6 +28,7 @@ public class AgilezenApi implements IKanbanApi {
 
 	@Override
 	public int GetProjectsCount() {
+		BufferedReader in = null;
 		HttpGet getRequest = new HttpGet("http://agilezen.com/api/v1/projects?apikey=dabbb64a56a7454db2819405f2009b23");
 		try {
 			HttpResponse response = httpclient.execute(getRequest);
@@ -35,14 +36,20 @@ public class AgilezenApi implements IKanbanApi {
 			
 			String json = reader.Read(stream);
 
+			/// Log.d("project page", sb.toString());
+			
 			Gson  gson = new Gson();
 			ProjectsPage  page = gson.fromJson(json, ProjectsPage.class);
-
+		
+//			Type collectionType = new TypeToken<Collection<Project>>() {}.getType();
+//			Collection<Project> projects = gson.fromJson(sb.toString(), collectionType);
 			return page.items.size();
 			
 		} catch (ClientProtocolException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return 0;
