@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="/home/georgec/workspace/libs/guice-2.0-no_aop.jar"/>
 	<classpathentry kind="lib" path="/home/georgec/workspace/libs/roboguice-1.1.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/KanbanApi.AgilezenApi"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

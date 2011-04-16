@@ -1,0 +1,10 @@
+package Codemeditation.AgilezenApiTest;
+
+import junit.textui.TestRunner;
+
+import org.junit.runner.RunWith;
+
+@RunWith(TestRunner.class)
+public class AgilezenApiTest {
+
+}

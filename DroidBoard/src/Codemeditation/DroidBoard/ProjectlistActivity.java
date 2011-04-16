@@ -2,6 +2,7 @@ package Codemeditation.DroidBoard;
 
 import roboguice.activity.RoboActivity;
 import roboguice.inject.InjectView;
+import Codemeditation.AgilezenApi.IKanbanApi;
 import android.os.Bundle;
 import android.widget.TextView;
 

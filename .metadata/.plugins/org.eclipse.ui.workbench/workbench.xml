@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="15" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="0" y="24">
+<window height="769" width="1020" x="336" y="165">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -15,13 +15,13 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="104" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="276" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="130" y="30"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="com.android.ide.eclipse.editors.layout.LayoutEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.android.ide.eclipse.editors.layout.LayoutEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -36,61 +36,27 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-<part id="8"/>
-<part id="9"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Projectlist.java" partName="Projectlist.java" path="/home/georgec/workspace/DroidBoard/src/Codemeditation/DroidBoard/Projectlist.java" title="Projectlist.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/Projectlist.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/src/Codemeditation/DroidBoard/Projectlist.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="363" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApiTest.java" partName="AgilezenApiTest.java" path="/home/georgec/workspace/KanbanApi.AgilezenApi/apitest/AgilezenApiTest.java" title="AgilezenApiTest.java" tooltip="KanbanApi.AgilezenApi/apitest/AgilezenApiTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KanbanApi.AgilezenApi/apitest/AgilezenApiTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="228" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="projectlistTest.java" partName="projectlistTest.java" path="/home/georgec/workspace/DroidBoard/test/projectlistTest.java" title="projectlistTest.java" tooltip="DroidBoardTest/test/projectlistTest.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoardTest/test/projectlistTest.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="494" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApi.java" partName="AgilezenApi.java" path="/home/georgec/workspace/KanbanApi.AgilezenApi/src/Codemeditation/AgilezenApi/AgilezenApi.java" title="AgilezenApi.java" tooltip="KanbanApi.AgilezenApi/src/Codemeditation/AgilezenApi/AgilezenApi.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/KanbanApi.AgilezenApi/src/Codemeditation/AgilezenApi/AgilezenApi.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="79" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiceTestRunner.java" partName="GuiceTestRunner.java" path="/home/georgec/workspace/DroidBoard/test/GuiceTestRunner.java" title="GuiceTestRunner.java" tooltip="DroidBoardTest/test/GuiceTestRunner.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoardTest/test/GuiceTestRunner.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="15" selectionOffset="334" selectionTopPixel="32"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ProjectlistActivity.java" partName="ProjectlistActivity.java" path="/home/georgec/workspace/DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java" title="ProjectlistActivity.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="378" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DependencyModule.java" partName="DependencyModule.java" path="/home/georgec/workspace/DroidBoard/src/Codemeditation/DroidBoard/DependencyModule.java" title="DependencyModule.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/DependencyModule.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/src/Codemeditation/DroidBoard/DependencyModule.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="130" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApi.java" partName="AgilezenApi.java" path="/home/georgec/workspace/DroidBoard/src/Codemeditation/AgilezenApi/AgilezenApi.java" title="AgilezenApi.java" tooltip="DroidBoard/src/Codemeditation/AgilezenApi/AgilezenApi.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/src/Codemeditation/AgilezenApi/AgilezenApi.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DroidBoardApplication.java" partName="DroidBoardApplication.java" path="/home/georgec/workspace/DroidBoard/src/Codemeditation/DroidBoard/DroidBoardApplication.java" title="DroidBoardApplication.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/DroidBoardApplication.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/src/Codemeditation/DroidBoard/DroidBoardApplication.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IKanbanApi.java" partName="IKanbanApi.java" path="/home/georgec/workspace/DroidBoard/src/Codemeditation/DroidBoard/IKanbanApi.java" title="IKanbanApi.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/IKanbanApi.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/src/Codemeditation/DroidBoard/IKanbanApi.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" partName="strings.xml" path="/home/georgec/workspace/DroidBoard/res/values/strings.xml" title="strings.xml" tooltip="DroidBoard/res/values/strings.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/res/values/strings.xml"/>
-</editor>
-<editor activePart="true" focus="true" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="Projectlist.xml" partName="Projectlist.xml" path="/home/georgec/workspace/DroidBoard/res/layout/Projectlist.xml" title="Projectlist.xml" tooltip="DroidBoard/res/layout/Projectlist.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/res/layout/Projectlist.xml"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApiTest.java" partName="AgilezenApiTest.java" path="/home/georgec/workspace/KanbanApi.AgilezenApi/apitest/AgilezenApiTest.java" title="AgilezenApiTest.java" tooltip="DroidBoardTest/apitest/AgilezenApiTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoardTest/apitest/AgilezenApiTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="215" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
@@ -221,7 +187,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.20429544" ratioLeft="390" ratioRight="1519" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.6086956" ratioLeft="1162" ratioRight="747" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.73860914" ratioLeft="616" ratioRight="218" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -254,143 +220,61 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/DroidBoard/AndroidManifest.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/Projectlist.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/KanbanApi.AgilezenApi/apitest/AgilezenApiTest.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoardTest/apitest/AgilezenApiTest.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoardTest/test/projectlistTest.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=DroidBoardTest/\/home\/georgec\/workspace\/libs\/robolectric-1.0-RC1-jar-with-dependencies.jar&lt;com.xtremelabs.robolectric.bytecode(AndroidTranslator.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoardTest/test/GuiceTestRunner.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/main.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/DroidBoard/res/layout/GuiceTestRunner.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/GuiceTestRunner.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/DroidBoard/res/layout/Projectlist.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/Projectlist.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoardTest/test/projectlistTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/DependencyModule.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/AgilezenApi/AgilezenApi.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/DroidBoardApplication.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/IKanbanApi.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/Projectlist.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/DroidBoard/res/values/strings.xml"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=DroidBoardTest/\/home\/georgec\/workspace\/libs\/robolectric-1.0-RC1-jar-with-dependencies.jar&lt;com.xtremelabs.robolectric(RobolectricTestRunner.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/test/GuiceTestRunner.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/KanbanApi.AgilezenApi/src/Codemeditation/AgilezenApi/AgilezenApi.java"/>
 </editors>
-<item historyLabel="DroidBoard Manifest" index="0"/>
-<item historyLabel="Projectlist.java" index="1">
-<position info="not_deleted" x="348" y="0"/>
-</item>
-<item historyLabel="Projectlist.java" index="1">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Projectlist.java" index="1">
-<position info="not_deleted" x="141" y="0"/>
-</item>
-<item historyLabel="Projectlist.java" index="1">
-<position info="not_deleted" x="116" y="11"/>
-</item>
-<item historyLabel="projectlistTest.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="projectlistTest.java" index="2">
-<position info="not_deleted" x="267" y="0"/>
-</item>
-<item historyLabel="AndroidTranslator.class" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="projectlistTest.java" index="2">
-<position info="not_deleted" x="267" y="0"/>
-</item>
-<item historyLabel="GuiceTestRunner.java" index="4">
-<position info="not_deleted" x="320" y="0"/>
-</item>
-<item historyLabel="GuiceTestRunner.java" index="4">
-<position info="not_deleted" x="334" y="15"/>
-</item>
-<item historyLabel="GuiceTestRunner.java" index="4">
-<position info="not_deleted" x="407" y="8"/>
-</item>
-<item historyLabel="GuiceTestRunner.java" index="4">
-<position info="not_deleted" x="416" y="9"/>
-</item>
-<item historyLabel="GuiceTestRunner.java" index="4">
-<position info="not_deleted" x="1008" y="0"/>
-</item>
-<item historyLabel="GuiceTestRunner.java" index="4">
-<position info="not_deleted" x="334" y="15"/>
-</item>
-<item historyLabel="projectlistTest.java" index="2">
-<position info="not_deleted" x="494" y="0"/>
-</item>
-<item historyLabel="main.xml" index="5"/>
-<item historyLabel="ProjectlistActivity.java" index="6">
+<item historyLabel="AgilezenApiTest.java" index="0">
 <position/>
 </item>
-<item historyLabel="main.xml" index="5"/>
-<item historyLabel="GuiceTestRunner.xml" index="7">
+<item historyLabel="AgilezenApiTest.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ProjectlistActivity.java" index="6">
-<position info="not_deleted" x="358" y="0"/>
+<item historyLabel="AgilezenApiTest.java" index="0">
+<position/>
 </item>
-<item historyLabel="GuiceTestRunner.xml" index="8"/>
-<item historyLabel="Projectlist.xml" index="9">
-<position info="not_deleted" x="0" y="431"/>
+<item historyLabel="projectlistTest.java" index="2">
+<position info="not_deleted" x="998" y="0"/>
 </item>
-<item historyLabel="ProjectlistActivity.java" index="6">
-<position info="not_deleted" x="378" y="0"/>
-</item>
-<item historyLabel="Projectlist.xml" index="10"/>
-<item historyLabel="ProjectlistActivity.java" index="6">
-<position info="not_deleted" x="378" y="0"/>
-</item>
-<item historyLabel="Projectlist.xml" index="10"/>
-<item historyLabel="ProjectlistActivity.java" index="6">
-<position info="not_deleted" x="353" y="0"/>
-</item>
-<item historyLabel="Projectlist.xml" index="10">
-<position info="not_deleted" x="0" y="431"/>
-</item>
-<item historyLabel="ProjectlistActivity.java" index="6">
-<position info="not_deleted" x="353" y="0"/>
-</item>
-<item historyLabel="projectlistTest.java" index="11">
-<position info="not_deleted" x="494" y="0"/>
-</item>
-<item historyLabel="DependencyModule.java" index="12">
+<item historyLabel="AgilezenApiTest.java" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DependencyModule.java" index="12">
-<position info="not_deleted" x="130" y="0"/>
+<item historyLabel="projectlistTest.java" index="2">
+<position info="not_deleted" x="998" y="0"/>
 </item>
-<item historyLabel="ProjectlistActivity.java" index="6">
-<position info="not_deleted" x="333" y="0"/>
+<item historyLabel="AgilezenApiTest.java" index="0">
+<position info="not_deleted" x="402" y="0"/>
 </item>
-<item historyLabel="DependencyModule.java" index="12">
-<position info="not_deleted" x="130" y="0"/>
+<item historyLabel="AgilezenApiTest.java" index="0">
+<position info="not_deleted" x="152" y="0"/>
 </item>
-<item historyLabel="AgilezenApi.java" index="13">
+<item historyLabel="RobolectricTestRunner.class" index="3">
+<position/>
+</item>
+<item historyLabel="AgilezenApiTest.java" index="0">
+<position info="not_deleted" x="228" y="0"/>
+</item>
+<item historyLabel="GuiceTestRunner.java" index="4">
+<position info="not_deleted" x="372" y="0"/>
+</item>
+<item historyLabel="RobolectricTestRunner.class" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="DependencyModule.java" index="12">
-<position info="not_deleted" x="130" y="0"/>
+<item historyLabel="GuiceTestRunner.java" index="4">
+<position info="not_deleted" x="372" y="0"/>
 </item>
-<item historyLabel="DroidBoardApplication.java" index="14">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="AgilezenApi.java" index="5">
+<position info="not_deleted" x="79" y="0"/>
 </item>
-<item historyLabel="IKanbanApi.java" index="15">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="AgilezenApiTest.java" index="1">
+<position info="not_deleted" x="282" y="15"/>
 </item>
-<item historyLabel="ProjectlistActivity.java" index="6">
-<position info="not_deleted" x="378" y="0"/>
+<item active="true" historyLabel="AgilezenApiTest.java" index="1">
+<position info="not_deleted" x="260" y="0"/>
 </item>
-<item historyLabel="Projectlist.xml" index="16"/>
-<item historyLabel="ProjectlistActivity.java" index="6">
-<position info="not_deleted" x="378" y="0"/>
-</item>
-<item historyLabel="Projectlist.xml" index="16"/>
-<item historyLabel="ProjectlistActivity.java" index="6">
-<position info="not_deleted" x="378" y="0"/>
-</item>
-<item historyLabel="strings.xml" index="17"/>
-<item active="true" historyLabel="Projectlist.xml" index="16"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -408,47 +292,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="Projectlist.xml" tooltip="DroidBoard/res/layout/Projectlist.xml">
-<persistable path="/DroidBoard/res/layout/Projectlist.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApiTest.java" tooltip="DroidBoardTest/apitest/AgilezenApiTest.java">
+<persistable path="/DroidBoardTest/apitest/AgilezenApiTest.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" name="strings.xml" tooltip="DroidBoard/res/values/strings.xml">
-<persistable path="/DroidBoard/res/values/strings.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApi.java" tooltip="KanbanApi.AgilezenApi/src/Codemeditation/AgilezenApi/AgilezenApi.java">
+<persistable path="/KanbanApi.AgilezenApi/src/Codemeditation/AgilezenApi/AgilezenApi.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IKanbanApi.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/IKanbanApi.java">
-<persistable path="/DroidBoard/src/Codemeditation/DroidBoard/IKanbanApi.java"/>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="RobolectricTestRunner.class" tooltip="com.xtremelabs.robolectric.RobolectricTestRunner">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=DroidBoardTest/\/home\/georgec\/workspace\/libs\/robolectric-1.0-RC1-jar-with-dependencies.jar&lt;com.xtremelabs.robolectric(RobolectricTestRunner.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DroidBoardApplication.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/DroidBoardApplication.java">
-<persistable path="/DroidBoard/src/Codemeditation/DroidBoard/DroidBoardApplication.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiceTestRunner.java" tooltip="DroidBoard/test/GuiceTestRunner.java">
+<persistable path="/DroidBoard/test/GuiceTestRunner.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApi.java" tooltip="DroidBoard/src/Codemeditation/AgilezenApi/AgilezenApi.java">
-<persistable path="/DroidBoard/src/Codemeditation/AgilezenApi/AgilezenApi.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DependencyModule.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/DependencyModule.java">
-<persistable path="/DroidBoard/src/Codemeditation/DroidBoard/DependencyModule.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="GuiceTestRunner.xml" tooltip="DroidBoard/res/layout/GuiceTestRunner.xml">
-<persistable path="/DroidBoard/res/layout/GuiceTestRunner.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ProjectlistActivity.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java">
-<persistable path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="DroidBoard/res/layout/main.xml">
-<persistable path="/DroidBoard/res/layout/main.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiceTestRunner.java" tooltip="DroidBoardTest/test/GuiceTestRunner.java">
-<persistable path="/DroidBoardTest/test/GuiceTestRunner.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="AndroidTranslator.class" tooltip="com.xtremelabs.robolectric.bytecode.AndroidTranslator">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=DroidBoardTest/\/home\/georgec\/workspace\/libs\/robolectric-1.0-RC1-jar-with-dependencies.jar&lt;com.xtremelabs.robolectric.bytecode(AndroidTranslator.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApiTest.java" tooltip="KanbanApi.AgilezenApi/apitest/AgilezenApiTest.java">
+<persistable path="/KanbanApi.AgilezenApi/apitest/AgilezenApiTest.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="projectlistTest.java" tooltip="DroidBoardTest/test/projectlistTest.java">
 <persistable path="/DroidBoardTest/test/projectlistTest.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Projectlist.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/Projectlist.java">
-<persistable path="/DroidBoard/src/Codemeditation/DroidBoard/Projectlist.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiceTestRunner.java" tooltip="DroidBoardTest/test/GuiceTestRunner.java">
+<persistable path="/DroidBoardTest/test/GuiceTestRunner.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="DroidBoard/AndroidManifest.xml">
-<persistable path="/DroidBoard/AndroidManifest.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestRunnerConfigurationModule.java" tooltip="DroidBoardTest/test/TestRunnerConfigurationModule.java">
+<persistable path="/DroidBoardTest/test/TestRunnerConfigurationModule.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IHttpClient.java" tooltip="DroidBoardTest/apitest/IHttpClient.java">
+<persistable path="/DroidBoardTest/apitest/IHttpClient.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApiGuiceTestRunner.java" tooltip="DroidBoardTest/apitest/AgilezenApiGuiceTestRunner.java">
+<persistable path="/DroidBoardTest/apitest/AgilezenApiGuiceTestRunner.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApiTestRunner.java" tooltip="DroidBoardTest/apitest/AgilezenApiTestRunner.java">
+<persistable path="/DroidBoardTest/apitest/AgilezenApiTestRunner.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenProjectlist.java" tooltip="KanbanApi.AgilezenApi/apitest/AgilezenProjectlist.java">
+<persistable path="/KanbanApi.AgilezenApi/apitest/AgilezenProjectlist.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenProjectlist.java" tooltip="DroidBoardTest/apitest/AgilezenProjectlist.java">
+<persistable path="/DroidBoardTest/apitest/AgilezenProjectlist.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApiTestRunner.java" tooltip="KanbanApi.AgilezenApi/apitest/AgilezenApiTestRunner.java">
+<persistable path="/KanbanApi.AgilezenApi/apitest/AgilezenApiTestRunner.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="projectlistTest.java" tooltip="DroidBoard/test/projectlistTest.java">
+<persistable path="/DroidBoard/test/projectlistTest.java"/>
 </file>
 </mruList>
 </workbench>

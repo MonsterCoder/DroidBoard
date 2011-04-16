@@ -1,0 +1,21 @@
+package Codemeditation.DroidBoard;
+
+import roboguice.activity.RoboActivity;
+import roboguice.inject.InjectView;
+import android.os.Bundle;
+import android.widget.TextView;
+
+import com.google.inject.Inject;
+
+public class ProjectlistActivity extends RoboActivity {
+	@InjectView(R.id.projectlist_title) TextView projectlist_title_view;
+	@Inject IKanbanApi kanbanApi;
+	
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.projectlistview);
+        projectlist_title_view.setText(String.format("%s active projects", kanbanApi.GetProjectsCount()));
+    }
+}

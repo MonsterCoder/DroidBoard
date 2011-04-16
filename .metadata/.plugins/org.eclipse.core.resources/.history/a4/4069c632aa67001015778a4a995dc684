@@ -1,0 +1,19 @@
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import com.xtremelabs.robolectric.RobolectricTestRunner;
+
+@RunWith(RobolectricTestRunner.class)
+public class AgilezenApiTest {
+	
+	@Test
+	public void It_should_return_collection_of_projects() {
+		
+	}
+	
+	@Test
+	public void It_should_return_projects_count() {
+		
+	}
+
+}

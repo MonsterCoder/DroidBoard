@@ -1,0 +1,30 @@
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import Codemeditation.AgilezenApi.AgilezenApi;
+import Codemeditation.AgilezenApi.IHttpClient;
+
+import com.xtremelabs.robolectric.RobolectricTestRunner;
+
+@RunWith(RobolectricTestRunner.class)
+public class AgilezenApiTest {
+	AgilezenApi sut;
+	
+	@Before
+	public void Setup() {
+		IHttpClient client = mock(IHttpClient);
+		sut = new AgilezenApi();
+	}
+	
+	
+	@Test
+	public void It_should_return_collection_of_projects() {
+		
+	}
+	
+	@Test
+	public void It_should_return_projects_count() {
+		
+	}
+}

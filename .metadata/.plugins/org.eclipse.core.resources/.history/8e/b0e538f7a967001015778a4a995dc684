@@ -1,0 +1,8 @@
+import org.junit.runner.RunWith;
+
+import com.xtremelabs.robolectric.RobolectricTestRunner;
+
+@RunWith(RobolectricTestRunner.class)
+public class AgilezenApiTest {
+
+}

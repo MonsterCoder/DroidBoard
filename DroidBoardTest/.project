@@ -17,6 +17,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>apitest</name>
+			<type>2</type>
+			<location>/home/georgec/workspace/KanbanApi.AgilezenApi/apitest</location>
+		</link>
+		<link>
 			<name>test</name>
 			<type>2</type>
 			<location>/home/georgec/workspace/DroidBoard/test</location>

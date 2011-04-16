@@ -3,4 +3,7 @@
 <fullyQualifiedTypeName name="com.xtremelabs.robolectric.Robolectric"/>
 <fullyQualifiedTypeName name="Codemeditation.DroidBoard.R.layout"/>
 <fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="com.xtremelabs.robolectric.RobolectricTestRunner"/>
+<fullyQualifiedTypeName name="Codemeditation.AgilezenApi.AgilezenApi"/>
+<fullyQualifiedTypeName name="org.apache.http.client.HttpClient"/>
 </qualifiedTypeNameHistroy>

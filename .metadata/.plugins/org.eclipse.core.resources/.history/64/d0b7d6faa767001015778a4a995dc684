@@ -1,0 +1,19 @@
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+@RunWith(GuiceTestRunner.class)
+public class AgilezenProjectlist {
+	
+	@Before
+	public void setup() throws Exception {
+	
+		
+	}
+	
+	@Test
+	public void It_should_return_correct_projects_count() {
+	
+	}
+	
+}

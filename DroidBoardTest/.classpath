@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="test"/>
-	<classpathentry excluding="test/" kind="src" path=""/>
+	<classpathentry kind="src" path="apitest"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="lib" path="/home/georgec/workspace/libs/gson-1.7.1-sources.jar"/>
 	<classpathentry kind="lib" path="/home/georgec/workspace/libs/guice-2.0-no_aop.jar"/>
@@ -9,7 +9,8 @@
 	<classpathentry kind="lib" path="/home/georgec/workspace/libs/robolectric-1.0-RC1-jar-with-dependencies.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/DroidBoard"/>
-	<classpathentry kind="lib" path="/home/georgec/android-sdk-linux_x86/platforms/android-4/android.jar"/>
 	<classpathentry kind="lib" path="/home/georgec/workspace/libs/mockito-all-1.8.5.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/KanbanApi.AgilezenApi"/>
+	<classpathentry kind="lib" path="/home/georgec/android-sdk-linux_x86/platforms/android-4/android.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

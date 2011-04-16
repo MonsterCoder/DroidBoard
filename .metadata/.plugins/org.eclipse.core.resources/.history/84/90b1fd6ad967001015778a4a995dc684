@@ -1,0 +1,15 @@
+package Codemeditation.AgilezenApi;
+
+public class AgilezenApi implements IKanbanApi {
+
+	public AgilezenApi(IHttpClient client) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public int GetProjectsCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

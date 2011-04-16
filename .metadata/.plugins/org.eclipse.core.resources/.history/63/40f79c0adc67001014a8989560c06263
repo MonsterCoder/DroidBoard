@@ -1,0 +1,11 @@
+import roboguice.config.AbstractAndroidModule;
+import Codemeditation.AgilezenApi.IKanbanApi;
+public class TestRunnerConfigurationModule extends AbstractAndroidModule {
+
+	@Override
+	protected void configure() {
+		IKanbanApi mockKanbanApi = org.mockito.Mockito.mock(IKanbanApi.class);
+		bind(IKanbanApi.class).toInstance(mockKanbanApi) ; 
+	}
+
+}

@@ -1,4 +1,4 @@
-#Thu Apr 14 16:04:13 CDT 2011
+#Fri Apr 15 22:36:10 CDT 2011
 content_assist_proposals_foreground=60,60,60
 spelling_locale=en_GB
 spelling_locale_initialized=true
@@ -18,5 +18,5 @@ org.eclipse.jdt.ui.formatterprofiles.version=11
 content_assist_number_of_computers=13
 useQuickDiffPrefPage=true
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="Codemeditation.AgilezenApi.IKanbanApi"><rhs name\="Codemeditation.AgilezenApi.AgilezenApi"/></lhs><lhs name\="Codemeditation.AgilezenApi.AgilezenApi"><rhs name\="Codemeditation.AgilezenApi.AgilezenApi"/></lhs></history>
 org.eclipse.jdt.ui.text.code_templates_migrated=true
