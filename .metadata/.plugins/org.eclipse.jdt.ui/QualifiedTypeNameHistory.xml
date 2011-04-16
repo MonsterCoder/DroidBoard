@@ -6,4 +6,11 @@
 <fullyQualifiedTypeName name="com.xtremelabs.robolectric.RobolectricTestRunner"/>
 <fullyQualifiedTypeName name="Codemeditation.AgilezenApi.AgilezenApi"/>
 <fullyQualifiedTypeName name="org.apache.http.client.HttpClient"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.Type"/>
+<fullyQualifiedTypeName name="org.GNOME.Accessibility.Collection"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type"/>
 </qualifiedTypeNameHistroy>

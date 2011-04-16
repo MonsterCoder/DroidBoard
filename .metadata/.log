@@ -1349,3 +1349,167 @@ Java Model Exception: Java Model Status [/home/georgec/android-sdk-linux_x86/pla
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
 !SUBENTRY 1 org.eclipse.jdt.core 4 1006 2011-04-15 22:40:59.106
 !MESSAGE /home/georgec/android-sdk-linux_x86/platforms/android-4/android.jar is not on its project's build path
+!SESSION 2011-04-15 23:23:01.821 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-04-15 23:23:02.902
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 4 4 2011-04-15 23:54:52.841
+!MESSAGE Referenced part does not exist yet: org.eclipse.ui.views.ProblemView.
+!SESSION 2011-04-16 00:34:26.925 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-04-16 00:43:40.603
+!MESSAGE No command output when running: 'am start -n Codemeditation.DroidBoard/Codemeditation.DroidBoard.ProjectlistActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device emulator-5554
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:276)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:74)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1146)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.clientChanged(AndroidLaunchController.java:1489)
+	at com.android.ddmlib.AndroidDebugBridge.clientChanged(AndroidDebugBridge.java:868)
+	at com.android.ddmlib.Device.update(Device.java:398)
+	at com.android.ddmlib.Client.update(Client.java:835)
+	at com.android.ddmlib.HandleHello.handleHELO(HandleHello.java:122)
+	at com.android.ddmlib.HandleHello.handleChunk(HandleHello.java:80)
+	at com.android.ddmlib.MonitorThread.callHandler(MonitorThread.java:414)
+	at com.android.ddmlib.MonitorThread.processClientActivity(MonitorThread.java:336)
+	at com.android.ddmlib.MonitorThread.run(MonitorThread.java:263)
+
+!ENTRY org.eclipse.debug.core 4 2 2011-04-16 00:50:20.658
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:3884)
+	at org.eclipse.swt.SWT.error(SWT.java:3799)
+	at org.eclipse.swt.SWT.error(SWT.java:3770)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1150)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:673)
+	at org.eclipse.debug.internal.ui.contexts.DebugModelContextBindingManager.launchesTerminated(DebugModelContextBindingManager.java:341)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:303)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:256)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:991)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:401)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:571)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1081)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1115)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:382)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.debug.core 4 120 2011-04-16 00:50:20.658
+!MESSAGE An exception occurred during launch change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:3884)
+	at org.eclipse.swt.SWT.error(SWT.java:3799)
+	at org.eclipse.swt.SWT.error(SWT.java:3770)
+	at org.eclipse.swt.widgets.Display.error(Display.java:1150)
+	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:673)
+	at org.eclipse.debug.internal.ui.contexts.DebugModelContextBindingManager.launchesTerminated(DebugModelContextBindingManager.java:341)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.run(LaunchManager.java:303)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.internal.core.LaunchManager$LaunchesNotifier.notify(LaunchManager.java:256)
+	at org.eclipse.debug.internal.core.LaunchManager.fireUpdate(LaunchManager.java:991)
+	at org.eclipse.debug.core.Launch.fireTerminate(Launch.java:401)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:571)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1081)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1115)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:382)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2011-04-16 00:50:32.856 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-04-16 00:51:33.864
+!MESSAGE No command output when running: 'am start -n Codemeditation.DroidBoard/Codemeditation.DroidBoard.ProjectlistActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device emulator-5554
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:276)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:74)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1146)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:823)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.access$3(AndroidLaunchController.java:807)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController$3.run(AndroidLaunchController.java:655)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-04-16 00:55:07.099
+!MESSAGE No command output when running: 'am start -n Codemeditation.DroidBoard/Codemeditation.DroidBoard.ProjectlistActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device emulator-5554
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:276)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:74)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1146)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:823)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.access$3(AndroidLaunchController.java:807)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController$3.run(AndroidLaunchController.java:655)
+!SESSION 2011-04-16 01:27:31.963 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-04-16 01:50:35.030
+!MESSAGE No command output when running: 'am start -n Codemeditation.DroidBoard/Codemeditation.DroidBoard.ProjectlistActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device emulator-5554
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:276)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:74)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1146)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:823)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.access$3(AndroidLaunchController.java:807)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController$3.run(AndroidLaunchController.java:655)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-04-16 01:51:33.510
+!MESSAGE No command output when running: 'am start -n Codemeditation.DroidBoard/Codemeditation.DroidBoard.ProjectlistActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device emulator-5554
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:276)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:74)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1146)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:823)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.access$3(AndroidLaunchController.java:807)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController$3.run(AndroidLaunchController.java:655)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-04-16 01:54:18.721
+!MESSAGE No command output when running: 'am start -n Codemeditation.DroidBoard/Codemeditation.DroidBoard.ProjectlistActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device emulator-5554
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:276)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:74)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1146)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:823)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.access$3(AndroidLaunchController.java:807)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController$3.run(AndroidLaunchController.java:655)
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2011-04-16 02:00:25.382
+!MESSAGE No command output when running: 'am start -n Codemeditation.DroidBoard/Codemeditation.DroidBoard.ProjectlistActivity -a android.intent.action.MAIN -c android.intent.category.LAUNCHER' on device emulator-5554
+!STACK 0
+com.android.ddmlib.ShellCommandUnresponsiveException
+	at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:408)
+	at com.android.ddmlib.Device.executeShellCommand(Device.java:276)
+	at com.android.ide.eclipse.adt.internal.launch.ActivityLaunchAction.doLaunchAction(ActivityLaunchAction.java:74)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.launchApp(AndroidLaunchController.java:1146)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:823)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.access$3(AndroidLaunchController.java:807)
+	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController$3.run(AndroidLaunchController.java:655)

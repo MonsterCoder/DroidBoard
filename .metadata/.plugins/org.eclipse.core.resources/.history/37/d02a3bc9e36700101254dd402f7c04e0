@@ -1,0 +1,20 @@
+package Codemeditation.AgilezenApi;
+
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+
+public class AgilezenApi implements IKanbanApi {
+
+	private HttpClient httpclient;
+
+	public AgilezenApi(HttpClient client) {
+		httpclient = client;
+	}
+
+	@Override
+	public int GetProjectsCount() {
+		HttpGet getRequest = new HttpGet("");
+		return 0;
+	}
+
+}

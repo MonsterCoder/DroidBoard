@@ -1,5 +1,8 @@
 package Codemeditation.DroidBoard;
 
+import org.apache.http.client.HttpClient;
+import org.apache.http.impl.client.DefaultHttpClient;
+
 import roboguice.config.AbstractAndroidModule;
 import Codemeditation.AgilezenApi.AgilezenApi;
 import Codemeditation.AgilezenApi.IKanbanApi;
@@ -8,6 +11,7 @@ public class DependencyModule extends AbstractAndroidModule {
 
 	@Override
 	public void configure() {
+		bind(HttpClient.class).to(DefaultHttpClient.class);
 		bind(IKanbanApi.class).to(AgilezenApi.class);
 	}
 }
