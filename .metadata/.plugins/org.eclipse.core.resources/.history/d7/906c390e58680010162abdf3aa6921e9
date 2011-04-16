@@ -29,7 +29,8 @@ public class AgilezenApiTest {
 		HttpResponse mockResponse  =  org.mockito.Mockito.mock(HttpResponse.class);
 		HttpGet httpget =  org.mockito.Mockito.mock(HttpGet.class);
 		
-		org.mockito.Mockito.when(client.execute(httpget)).thenReturn(mockResponse);
+		TypeArgumentMatcher<HttpGet> clientmatch = new TypeArgumentMatcher(HttpGet.class);
+		org.mockito.Mockito.when(client.execute(org.mockito.Mockito.argThat(clientmatch))).thenReturn(mockResponse);
 		
 	
 		HttpEntity mockEntity = org.mockito.Mockito.mock(HttpEntity.class);
@@ -41,7 +42,7 @@ public class AgilezenApiTest {
 		IJsonFactory mockJsonFactory = org.mockito.Mockito.mock(IJsonFactory.class);
 		org.mockito.Mockito.when(mockJsonFactory.Read(mockStream)).thenReturn(json);
 		
-		sut = new AgilezenApi(client, mockJsonFactory, httpget);
+		sut = new AgilezenApi(client, mockJsonFactory);
 	}
 	
 	@Test

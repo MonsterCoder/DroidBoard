@@ -2,8 +2,6 @@ package Codemeditation.AgilezenApi;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URI;
-import java.net.URISyntaxException;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -19,23 +17,18 @@ public class AgilezenApi implements IKanbanApi {
 
 	private HttpClient httpclient;
 	private IJsonFactory reader;
-	private HttpGet httpget;
 
 	@Inject
-	public AgilezenApi(HttpClient client, IJsonFactory reader, HttpGet httpget) {
+	public AgilezenApi(HttpClient client, IJsonFactory reader) {
 		httpclient = client;
 		this.reader = reader;
-		this.httpget = httpget;
 	}
 
 	@Override
 	public int GetProjectsCount() {	
+		HttpGet getRequest = new HttpGet("http://agilezen.com/api/v1/projects?apikey=dabbb64a56a7454db2819405f2009b23");
 		try {
-
-			httpget.setURI(new URI("http://agilezen.com/api/v1/projects?apikey=dabbb64a56a7454db2819405f2009b23"));
-	
-	
-			HttpResponse response = httpclient.execute(httpget);
+			HttpResponse response = httpclient.execute(getRequest);
 			InputStream stream = response.getEntity().getContent();
 			
 			String json = reader.Read(stream);
@@ -48,9 +41,6 @@ public class AgilezenApi implements IKanbanApi {
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (URISyntaxException e) {
-
 			e.printStackTrace();
 		}
 		return 0;

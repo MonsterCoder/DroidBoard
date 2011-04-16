@@ -22,14 +22,14 @@ import com.xtremelabs.robolectric.RobolectricTestRunner;
 public class AgilezenApiTest {
 	AgilezenApi sut;
 	String json = "{\"page\":1,\"pageSize\":100,\"totalPages\":1,\"totalItems\":7,\"items\":[{\"id\":6856,\"name\":\".NET Media Library \",\"description\":\"Media Library to store music, videos, books, games, etc...\nImplemented using ASP.NET MVC and many other goodies....\",\"createTime\":\"2010-02-16T04:31:41\",\"owner\":{\"id\":3602,\"name\":\"Amir Barylko\",\"userName\":\"amirci\",\"email\":\"amir@barylko.com\"}},{\"id\":14147,\"name\":\"Price Room Designer\",\"description\":\"Anvil True Displacement Room Designer\",\"createTime\":\"2010-10-04T19:28:28\",\"owner\":{\"id\":3602,\"name\":\"Amir Barylko\",\"userName\":\"amirci\",\"email\":\"amir@barylko.com\"}},{\"id\":17066,\"name\":\"Zenboard\",\"description\":\"Companion for AgileZen to provide additional information using the API\",\"createTime\":\"2010-12-29T12:17:11\",\"owner\":{\"id\":3602,\"name\":\"Amir Barylko\",\"userName\":\"amirci\",\"email\":\"amir@barylko.com\"}},{\"id\":20555,\"name\":\"TwitterStudio\",\"description\":\"Twitter studio is a Visual Studio extension that enables you to post code snippets and comments to Twitter within IDE\",\"createTime\":\"2011-03-21T14:30:00\",\"owner\":{\"id\":8880,\"name\":\"Yong Chen\",\"userName\":\"MonsterCoder\",\"email\":\"MonsterCoder@gmail.com\"}},{\"id\":20618,\"name\":\"Kindlehog\",\"description\":\"\",\"createTime\":\"2011-03-22T15:23:35\",\"owner\":{\"id\":8880,\"name\":\"Yong Chen\",\"userName\":\"MonsterCoder\",\"email\":\"MonsterCoder@gmail.com\"}},{\"id\":20619,\"name\":\"TFS_Kanban\",\"description\":\"\",\"createTime\":\"2011-03-22T15:24:08\",\"owner\":{\"id\":8880,\"name\":\"Yong Chen\",\"userName\":\"MonsterCoder\",\"email\":\"MonsterCoder@gmail.com\"}},{\"id\":20621,\"name\":\"2011\",\"description\":\"\",\"createTime\":\"2011-03-22T15:52:19\",\"owner\":{\"id\":8880,\"name\":\"Yong Chen\",\"userName\":\"MonsterCoder\",\"email\":\"MonsterCoder@gmail.com\"}}]}";
-	
 	@Before
 	public void Setup() throws ClientProtocolException, IOException {
 		HttpClient client =  org.mockito.Mockito.mock(HttpClient.class);
 		HttpResponse mockResponse  =  org.mockito.Mockito.mock(HttpResponse.class);
 		HttpGet httpget =  org.mockito.Mockito.mock(HttpGet.class);
 		
-		org.mockito.Mockito.when(client.execute(httpget)).thenReturn(mockResponse);
+		TypeArgumentMatcher<HttpGet> clientmatch = new TypeArgumentMatcher(HttpGet.class);
+		org.mockito.Mockito.when(client.execute(org.mockito.Mockito.argThat(clientmatch))).thenReturn(mockResponse);
 		
 	
 		HttpEntity mockEntity = org.mockito.Mockito.mock(HttpEntity.class);
@@ -41,7 +41,7 @@ public class AgilezenApiTest {
 		IJsonFactory mockJsonFactory = org.mockito.Mockito.mock(IJsonFactory.class);
 		org.mockito.Mockito.when(mockJsonFactory.Read(mockStream)).thenReturn(json);
 		
-		sut = new AgilezenApi(client, mockJsonFactory, httpget);
+		sut = new AgilezenApi(client, mockJsonFactory);
 	}
 	
 	@Test

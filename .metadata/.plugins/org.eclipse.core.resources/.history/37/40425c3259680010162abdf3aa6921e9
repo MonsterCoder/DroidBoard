@@ -16,7 +16,7 @@ public class DependencyModule extends AbstractAndroidModule {
 	public void configure() {
 		bind(HttpClient.class).to(DefaultHttpClient.class);
 		bind(IJsonFactory.class).to(JsonFactory.class);
-		bind(HttpGet.class);
+		bind(HttpGet.class).toInstance(new HttpGet());
 		bind(IKanbanApi.class).to(AgilezenApi.class);
 	}
 }

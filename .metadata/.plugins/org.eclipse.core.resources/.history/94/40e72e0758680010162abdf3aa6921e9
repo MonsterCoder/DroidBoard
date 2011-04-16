@@ -31,9 +31,7 @@ public class AgilezenApi implements IKanbanApi {
 	@Override
 	public int GetProjectsCount() {	
 		try {
-
 			httpget.setURI(new URI("http://agilezen.com/api/v1/projects?apikey=dabbb64a56a7454db2819405f2009b23"));
-	
 	
 			HttpResponse response = httpclient.execute(httpget);
 			InputStream stream = response.getEntity().getContent();
@@ -48,9 +46,6 @@ public class AgilezenApi implements IKanbanApi {
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
-			e.printStackTrace();
-		} catch (URISyntaxException e) {
-
 			e.printStackTrace();
 		}
 		return 0;

@@ -49,9 +49,6 @@ public class AgilezenApi implements IKanbanApi {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		} catch (URISyntaxException e) {
-
-			e.printStackTrace();
 		}
 		return 0;
 	}
