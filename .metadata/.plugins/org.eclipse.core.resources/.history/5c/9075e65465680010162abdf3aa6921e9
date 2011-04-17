@@ -1,0 +1,18 @@
+package Codemeditaion.DroidBoard.Tasks;
+
+import Codemeditation.AgilezenApi.IKanbanApi;
+import android.os.AsyncTask;
+
+import com.google.inject.Inject;
+
+public class LoadProjectsTask extends AsyncTask {
+	@Inject IKanbanApi agilezenApi;
+	@Override
+	protected Object doInBackground(Object... arg0) {
+		agilezenApi.GetProjects();
+		return null;
+	}
+	
+	on
+
+}

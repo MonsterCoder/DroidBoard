@@ -9,5 +9,6 @@ public interface IKanbanApi {
 	int GetProjectsCount();
 	
 	Collection<Project> GetProjects();
-
+	
+	void Refresh();
 }

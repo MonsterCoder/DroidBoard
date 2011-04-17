@@ -1,0 +1,13 @@
+package Codemeditaion.DroidBoard.Tasks;
+
+import android.os.AsyncTask;
+
+public class LoadProjectsTask extends AsyncTask {
+
+	@Override
+	protected Object doInBackground(Object... arg0) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

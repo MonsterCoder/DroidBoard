@@ -1,0 +1,7 @@
+package Codemeditaion.DroidBoard.Tasks;
+
+import AsyncTask;
+
+public class LoadProjectsTask extends AsyncTask {
+
+}

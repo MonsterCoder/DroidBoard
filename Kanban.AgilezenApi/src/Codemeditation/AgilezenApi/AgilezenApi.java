@@ -23,37 +23,42 @@ public class AgilezenApi implements IKanbanApi {
 	private HttpClient httpclient;
 	private IJsonFactory reader;
 	private HttpGet httpget;
-	private Collection<Project> projects = new ArrayList<Project>();
+	private Collection<Project> projects;
 
 	@Inject
 	public AgilezenApi(HttpClient client, IJsonFactory reader, HttpGet httpget) {
 		httpclient = client;
 		this.reader = reader;
 		this.httpget = httpget;
-		
-		FetchProjects();
 	}
 
 	@Override
-	public int GetProjectsCount() {	
-		return projects.size();
+	public int GetProjectsCount() {		
+		return GetProjects().size();
 	}
 
 	@Override
 	public Collection<Project> GetProjects() {
+		if (projects == null) Refresh();		
+
 		return projects;
+	}
+
+	@Override
+	public void Refresh() {
+		FetchProjects();
 	}
 	
 	private void FetchProjects() {
 		try {
-
 			httpget.setURI(new URI("http://agilezen.com/api/v1/projects?apikey=dabbb64a56a7454db2819405f2009b23"));
-	
 	
 			HttpResponse response = httpclient.execute(httpget);
 			InputStream stream = response.getEntity().getContent();
 			
 			String json = reader.Read(stream);
+
+			stream.close();
 
 			Gson  gson = new Gson();
 			ProjectsPage  page = gson.fromJson(json, ProjectsPage.class);
@@ -69,4 +74,5 @@ public class AgilezenApi implements IKanbanApi {
 			e.printStackTrace();
 		}
 	}
+
 }
