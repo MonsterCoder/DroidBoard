@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.xtremelabs.robolectric.Robolectric"/>
 <fullyQualifiedTypeName name="Codemeditation.DroidBoard.R.layout"/>
-<fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="com.xtremelabs.robolectric.RobolectricTestRunner"/>
 <fullyQualifiedTypeName name="Codemeditation.AgilezenApi.AgilezenApi"/>
 <fullyQualifiedTypeName name="org.apache.http.client.HttpClient"/>
@@ -13,4 +12,9 @@
 <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.Type"/>
 <fullyQualifiedTypeName name="org.GNOME.Accessibility.Collection"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type"/>
+<fullyQualifiedTypeName name="android.widget.ListAdapter"/>
+<fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.id"/>
+<fullyQualifiedTypeName name="android.R.layout"/>
 </qualifiedTypeNameHistroy>

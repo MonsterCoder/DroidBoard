@@ -11,6 +11,5 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/Kanban.AgilezenApi"/>
 	<classpathentry kind="lib" path="/home/georgec/android-sdk-linux_x86/platforms/android-4/android.jar"/>
 	<classpathentry kind="lib" path="/home/georgec/workspace/libs/robolectric-1.0-RC1-jar-with-dependencies.jar"/>
-	<classpathentry kind="lib" path="/home/georgec/workspace/libs/google-gson-1.7.1/gson-1.7.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
