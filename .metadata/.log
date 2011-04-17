@@ -1933,3 +1933,6 @@ com.android.ddmlib.ShellCommandUnresponsiveException
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2011-04-17 10:27:45.551
 !MESSAGE Failed to load properties file for project 'testListActivity'
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-04-17 11:28:38.057
+!MESSAGE AndroidManifest: Ignoring unknown 'Te' XML element

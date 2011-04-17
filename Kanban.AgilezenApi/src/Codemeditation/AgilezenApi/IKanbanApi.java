@@ -1,6 +1,6 @@
 package Codemeditation.AgilezenApi;
 
-import java.util.Collection;
+import java.util.List;
 
 import Codemeditation.Domain.Project;
 
@@ -8,7 +8,7 @@ public interface IKanbanApi {
 
 	int GetProjectsCount();
 	
-	Collection<Project> GetProjects();
+	List<Project> GetProjects();
 	
 	void Refresh();
 }

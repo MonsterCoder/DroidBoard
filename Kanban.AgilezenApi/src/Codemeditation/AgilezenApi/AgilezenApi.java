@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.Collection;
+import java.util.List;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
@@ -22,7 +23,7 @@ public class AgilezenApi implements IKanbanApi {
 	private HttpClient httpclient;
 	private IJsonFactory reader;
 	private HttpGet httpget;
-	private Collection<Project> projects;
+	private List<Project> projects;
 
 	@Inject
 	public AgilezenApi(HttpClient client, IJsonFactory reader, HttpGet httpget) {
@@ -37,7 +38,7 @@ public class AgilezenApi implements IKanbanApi {
 	}
 
 	@Override
-	public Collection<Project> GetProjects() {
+	public List<Project> GetProjects() {
 		if (projects == null) Refresh();		
 
 		return projects;

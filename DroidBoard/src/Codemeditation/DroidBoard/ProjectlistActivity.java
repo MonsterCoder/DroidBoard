@@ -1,6 +1,7 @@
 package Codemeditation.DroidBoard;
 
 import java.util.Collection;
+import java.util.List;
 
 import roboguice.activity.RoboActivity;
 import roboguice.inject.InjectView;
@@ -9,8 +10,12 @@ import Codemeditation.Domain.Project;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import com.google.inject.Inject;
@@ -28,7 +33,30 @@ public class ProjectlistActivity extends RoboActivity {
         new LoadProjectsTask().execute(null);
     }
     
-    private class LoadProjectsTask extends AsyncTask<Void, Void, Collection<Project>>{
+    private class ProjectAdapter extends ArrayAdapter<Project> {
+	
+		private Project[] projects;
+
+		public ProjectAdapter(Project[] projects) {
+			super(ProjectlistActivity.this, R.layout.project_item, R.id.name, projects);
+			this.projects = projects;
+		}
+
+		@Override
+		public View getView(int position, View convertView, ViewGroup parent) {
+			LayoutInflater inflater = getLayoutInflater();
+			View item_row = inflater.inflate(R.layout.project_item, parent, false);
+			
+			TextView name = (TextView)item_row.findViewById(R.id.name);
+			name.setText(projects[position].name );
+			
+			TextView description = (TextView)item_row.findViewById(R.id.description);
+			description.setText(projects[position].description );
+			return item_row;
+		}
+    }
+    
+    private class LoadProjectsTask extends AsyncTask<Void, Void, List<Project>>{
     	private ProgressDialog dialog;
 
 		@Override
@@ -37,17 +65,19 @@ public class ProjectlistActivity extends RoboActivity {
     	}
     	
     	@Override
-    	protected void onPostExecute(Collection<Project> result) {
+    	protected void onPostExecute(List<Project> result) {
     		dialog.dismiss();
     		setContentView(R.layout.projectlistview);
-    		String[] array = new String[] {"project 1", "project 2" };
-    		ArrayAdapter<String> adapter = new ArrayAdapter<String>(ProjectlistActivity.this, android.R.layout.simple_list_item_1,  array);
+
+    		Project[] projects = result.toArray(new Project[0]);
+    		ProjectAdapter adapter = new ProjectAdapter(projects);
+    		
     		projectlist_list_view.setAdapter(adapter);
     		projectlist_title_view.setText(String.format("%s active projects", result.size()));
     	}
     	
 		@Override
-		protected Collection<Project> doInBackground(Void... arg0) {
+		protected List<Project> doInBackground(Void... arg0) {
 			return kanbanApi.GetProjects();
 		}
 
