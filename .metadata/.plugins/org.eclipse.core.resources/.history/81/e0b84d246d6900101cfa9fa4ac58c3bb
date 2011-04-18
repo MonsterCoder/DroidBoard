@@ -14,7 +14,6 @@
    <TextView 
   	android:id="@+id/description"
   	android:ellipsize="end"
-  	style="@style/Text.Definition"
-  	android:layout_marginLeft="5dip" />
+  	style="@style/Text.Definition"/>
   	/>
 </LinearLayout>

@@ -61,7 +61,7 @@ public class ProjectlistActivity extends RoboActivity {
 
 		@Override
     	protected void onPreExecute() {
-    		dialog = ProgressDialog.show(ProjectlistActivity.this, "", "Loading projects ...", true);
+    		dialog = ProgressDialog.show(ProjectlistActivity.this, "", "Loading. Please wait ...", true);
     	}
     	
     	@Override
