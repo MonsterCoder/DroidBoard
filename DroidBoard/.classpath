@@ -4,10 +4,10 @@
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="src" path="libs"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
-	<classpathentry kind="lib" path="/home/georgec/workspace/libs/guice-2.0-no_aop.jar"/>
-	<classpathentry kind="lib" path="/home/georgec/workspace/libs/roboguice-1.1.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Kanban.AgilezenApi"/>
-	<classpathentry kind="lib" path="/home/georgec/workspace/libs/google-gson-1.7.1/gson-1.7.1.jar"/>
+	<classpathentry kind="lib" path="/home/georgec/workplace/DroidBoard/libs/gson-1.7.1.jar"/>
+	<classpathentry kind="lib" path="/home/georgec/workplace/DroidBoard/libs/guice-2.0-no_aop.jar"/>
+	<classpathentry kind="lib" path="/home/georgec/workplace/DroidBoard/libs/roboguice-1.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

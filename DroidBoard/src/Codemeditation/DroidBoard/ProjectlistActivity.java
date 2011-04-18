@@ -71,7 +71,7 @@ public class ProjectlistActivity extends RoboListActivity {
     	
     	@Override
     	protected void onPostExecute(List<Project> result) {
-    		dialog.dismiss();
+    		if (dialog != null) dialog.dismiss();
     		setContentView(R.layout.projectlistview);
 
     		Project[] projects = result.toArray(new Project[0]);

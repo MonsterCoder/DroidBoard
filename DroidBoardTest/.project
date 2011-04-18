@@ -19,12 +19,12 @@
 		<link>
 			<name>apitest</name>
 			<type>2</type>
-			<location>/home/georgec/workspace/Kanban.AgilezenApi/apitest</location>
+			<location>/home/georgec/workplace/DroidBoard/Kanban.AgilezenApi/apitest</location>
 		</link>
 		<link>
 			<name>test</name>
 			<type>2</type>
-			<location>/home/georgec/workspace/DroidBoard/test</location>
+			<location>/home/georgec/workplace/DroidBoard/DroidBoard/test</location>
 		</link>
 	</linkedResources>
 </projectDescription>

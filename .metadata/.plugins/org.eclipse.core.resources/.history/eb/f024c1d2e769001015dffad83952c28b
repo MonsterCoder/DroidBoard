@@ -1,0 +1,41 @@
+import static org.junit.Assert.assertTrue;
+
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import Codemeditation.AgilezenApi.IKanbanApi;
+import Codemeditation.Domain.Project;
+import Codemeditation.DroidBoard.ProjectlistActivity;
+import Codemeditation.DroidBoard.R;
+import android.widget.TextView;
+
+import com.google.inject.Inject;
+
+@RunWith(GuiceTestRunner.class)
+public class projectlistTest {
+	private ProjectlistActivity projectlist_activity;
+	private TextView projectlist_title;
+	
+	@Inject IKanbanApi mockKanbanApi;
+	
+	@Before
+	public void setup() throws Exception {
+		List<Project> projects = org.mockito.Mockito.mock(List.class);
+		org.mockito.Mockito.when(projects.size()).thenReturn(7);
+		org.mockito.Mockito.when(mockKanbanApi.GetProjects()).thenReturn(projects);
+
+		
+		projectlist_activity = new ProjectlistActivity();
+		projectlist_activity.onCreate(null);
+		projectlist_title = ((TextView)projectlist_activity.findViewById(R.id.projectlist_title));
+
+	};
+	
+    @Test
+    public void should_show_project_List_title() throws Exception {
+    	assertTrue(projectlist_title.getText().equals("Active Projects: 7"));
+    }
+}
