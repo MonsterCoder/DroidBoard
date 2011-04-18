@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="projectlist_title">active projects</string>
+    <string name="app_name">DroidBoard</string>
+    <string name="app_label">Droid Board</string>
+    <string name="app_description">Login as MonsterCoder</string>
+    
+</resources>

@@ -73,7 +73,7 @@ public class ProjectlistActivity extends RoboActivity {
     		ProjectAdapter adapter = new ProjectAdapter(projects);
     		
     		projectlist_list_view.setAdapter(adapter);
-    		projectlist_title_view.setText(String.format("%s active projects", result.size()));
+    		projectlist_title_view.setText(String.format("Active Projects: %s", result.size()));
     	}
     	
 		@Override
