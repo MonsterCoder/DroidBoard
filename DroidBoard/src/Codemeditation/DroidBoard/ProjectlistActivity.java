@@ -27,7 +27,7 @@ public class ProjectlistActivity extends RoboListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       
+		setContentView(R.layout.projectlistview);
         new LoadProjectsTask().execute(null);
     }
     
@@ -73,7 +73,6 @@ public class ProjectlistActivity extends RoboListActivity {
     	@Override
     	protected void onPostExecute(List<Project> result) {
     		if (dialog != null) dialog.dismiss();
-    		setContentView(R.layout.projectlistview);
 
     		Project[] projects = result.toArray(new Project[0]);
     		ProjectAdapter adapter = new ProjectAdapter(projects);
