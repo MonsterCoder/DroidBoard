@@ -30,11 +30,11 @@ public class ProjectlistActivity extends RoboListActivity {
        
         new LoadProjectsTask().execute(null);
     }
-    
+
     @Override
-    protected void onListItemClick(ListView l, View v, int position, long id) {
-    	new SelectProjectTask().execute(null);
-    	super.onListItemClick(l, v, position, id);
+    public boolean onContextItemSelected(MenuItem item) {
+    	 new SelectProjectTask().execute(null);
+    	return super.onContextItemSelected(item);
     }
     
     private class ProjectAdapter extends ArrayAdapter<Project> {
@@ -92,7 +92,7 @@ public class ProjectlistActivity extends RoboListActivity {
     		Project[] projects = result.toArray(new Project[0]);
     		ProjectAdapter adapter = new ProjectAdapter(projects);
     		
-    		setListAdapter(adapter);
+    		setAdapter(adapter);
     		projectlist_title_view.setText(String.format("Active Projects: %s", result.size()));
     	}
     	
