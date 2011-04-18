@@ -56,6 +56,6 @@ public class projectlistTest {
     
     @Test
     public void should_show_list_of_projects() throws Exception {
-    	assertTrue(projectlist_listview!=null);
+    	assertTrue(projectlist_listview.getCount() == 2);
     }
 }

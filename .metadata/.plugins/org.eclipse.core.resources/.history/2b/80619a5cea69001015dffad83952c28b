@@ -46,7 +46,7 @@ public class projectlistTest {
 		projectlist_activity = new ProjectlistActivity();
 		projectlist_activity.onCreate(null);
 		projectlist_title = ((TextView)projectlist_activity.findViewById(R.id.projectlist_title));
-		projectlist_listview =(ListView)projectlist_activity.findViewById(android.R.id.list);  
+		projectlist_listview =(ListView)projectlist_activity.getListView();  
 	};
 	
     @Test

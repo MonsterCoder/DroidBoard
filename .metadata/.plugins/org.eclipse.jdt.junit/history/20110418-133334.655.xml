@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="robolectricTestConfiguration" project="DroidBoardTest" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="projectlistTest" time="1.318">
+    <testcase name="should_show_project_List_title" classname="projectlistTest" time="1.257"/>
+    <testcase name="should_show_list_of_projects" classname="projectlistTest" time="0.061"/>
+  </testsuite>
+  <testsuite name="AgilezenApiTest" time="0.315">
+    <testcase name="It_should_return_collection_of_projects" classname="AgilezenApiTest" time="0.304"/>
+    <testcase name="It_should_return_projects_count" classname="AgilezenApiTest" time="0.011"/>
+  </testsuite>
+</testrun>

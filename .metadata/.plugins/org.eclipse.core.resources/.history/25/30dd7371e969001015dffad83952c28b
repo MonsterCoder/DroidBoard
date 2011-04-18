@@ -22,10 +22,10 @@ import com.google.inject.Inject;
 public class projectlistTest {
 	private ProjectlistActivity projectlist_activity;
 	private TextView projectlist_title;
-	private ListView projectlist_listview;
 	
 	@Inject IKanbanApi mockKanbanApi;
-
+	@InjectView(android.R.id.list) ListView projectlist_listview;
+	
 	@Before
 	public void setup() throws Exception {
 		Project p1 = new Project();
@@ -46,7 +46,7 @@ public class projectlistTest {
 		projectlist_activity = new ProjectlistActivity();
 		projectlist_activity.onCreate(null);
 		projectlist_title = ((TextView)projectlist_activity.findViewById(R.id.projectlist_title));
-		projectlist_listview =(ListView)projectlist_activity.findViewById(android.R.id.list);  
+
 	};
 	
     @Test
@@ -56,6 +56,6 @@ public class projectlistTest {
     
     @Test
     public void should_show_list_of_projects() throws Exception {
-    	assertTrue(projectlist_listview!=null);
+    	assertTrue(projectlist_listview.getCount() ==2);
     }
 }
