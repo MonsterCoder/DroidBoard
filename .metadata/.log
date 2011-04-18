@@ -2086,3 +2086,12 @@ com.android.ddmlib.ShellCommandUnresponsiveException
 	at com.android.ddmlib.MonitorThread.callHandler(MonitorThread.java:414)
 	at com.android.ddmlib.MonitorThread.processClientActivity(MonitorThread.java:336)
 	at com.android.ddmlib.MonitorThread.run(MonitorThread.java:263)
+!SESSION 2011-04-18 10:24:34.937 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/georgec/workplace/DroidBoard
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-04-18 10:24:36.774
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
