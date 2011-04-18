@@ -1,34 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="100" key="org.eclipse.jdt.internal.debug.ui.actions.PopupDisplayAction$DisplayPopupDIALOG_HEIGHT"/>
+	<item value="590" key="org.eclipse.jdt.internal.debug.ui.actions.PopupDisplayAction$DisplayPopupDIALOG_Y_ORIGIN"/>
+	<item value="296" key="org.eclipse.jdt.internal.debug.ui.actions.PopupInspectAction$2DIALOG_WIDTH"/>
+	<item value="744" key="org.eclipse.jdt.internal.debug.ui.actions.PopupInspectAction$2DIALOG_X_ORIGIN"/>
+	<item value="340" key="org.eclipse.jdt.internal.debug.ui.actions.PopupInspectAction$2DIALOG_Y_ORIGIN"/>
+	<item value="238" key="org.eclipse.jdt.internal.debug.ui.actions.PopupDisplayAction$DisplayPopupDIALOG_WIDTH"/>
+	<item value="274" key="org.eclipse.jdt.internal.debug.ui.actions.PopupInspectAction$2DIALOG_HEIGHT"/>
+	<item value="464" key="org.eclipse.jdt.internal.debug.ui.actions.PopupDisplayAction$DisplayPopupDIALOG_X_ORIGIN"/>
 	<section name="org.eclipse.debug.ui.SCOPED_SAVE_SELECTION_DIALOG">
 		<item value="350" key="DIALOG_WIDTH"/>
 		<item value="250" key="DIALOG_Y_ORIGIN"/>
-		<item value="350" key="DIALOG_HEIGHT"/>
 		<item value="786" key="DIALOG_X_ORIGIN"/>
+		<item value="350" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.debug.ui.SELECT_LAUNCHERS_DIALOG">
 		<item value="450" key="DIALOG_WIDTH"/>
 		<item value="20" key="DIALOG_Y_ORIGIN"/>
-		<item value="450" key="DIALOG_HEIGHT"/>
 		<item value="351" key="DIALOG_X_ORIGIN"/>
+		<item value="450" key="DIALOG_HEIGHT"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATIONS_DIALOG_SECTION">
 		<item value="1152" key="DIALOG_WIDTH"/>
 		<item value="57" key="DIALOG_Y_ORIGIN"/>
 		<item value=", org.eclipse.jdt.junit.launchconfig, com.android.ide.eclipse.adt.debug.LaunchConfigType, " key="org.eclipse.debug.ui.EXPANDED_NODES"/>
-		<item value="640" key="DIALOG_HEIGHT"/>
 		<item value="0" key="DIALOG_X_ORIGIN"/>
+		<item value="640" key="DIALOG_HEIGHT"/>
 		<item value="481" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_1"/>
-		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 		<item value="518" key="org.eclipse.debug.ui.DIALOG_SASH_WEIGHTS_2"/>
+		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.debug.ui.SELECT_LAUNCH_SHORTCUT_DIALOG">
 		<item value="352" key="DIALOG_WIDTH"/>
 		<item value="250" key="DIALOG_Y_ORIGIN"/>
-		<item value="786" key="DIALOG_X_ORIGIN"/>
 		<item value="350" key="DIALOG_HEIGHT"/>
+		<item value="786" key="DIALOG_X_ORIGIN"/>
 		<item value="1|Ubuntu|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 </section>

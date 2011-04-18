@@ -12,7 +12,11 @@ public class ProjectActivity extends RoboActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.project_view);
-		String project_id = getIntent().getStringExtra(Intent.EXTRA_TEXT);
-		project_header.setText("project_id here");
+		Intent intent = getIntent();
+		Bundle bundle = intent.getExtras();
+		int project_id = bundle.getInt("PROJECT_ID");
+		String project_name = bundle.getString("PROJECT_NAME");
+		
+		project_header.setText(String.format("%s",project_name));
 	}
 }

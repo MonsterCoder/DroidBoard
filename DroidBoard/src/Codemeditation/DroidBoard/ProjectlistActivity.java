@@ -34,7 +34,8 @@ public class ProjectlistActivity extends RoboListActivity {
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
     	Intent i = new Intent(ProjectlistActivity.this, ProjectActivity.class);
-    	i.putExtra(Intent.EXTRA_TEXT, kanbanApi.GetProjects().get(position).id);
+    	i.putExtra("PROJECT_ID", kanbanApi.GetProjects().get(position).id);
+    	i.putExtra("PROJECT_NAME", kanbanApi.GetProjects().get(position).name);
     	startActivity(i);
     }
     
@@ -77,7 +78,7 @@ public class ProjectlistActivity extends RoboListActivity {
     		Project[] projects = result.toArray(new Project[0]);
     		ProjectAdapter adapter = new ProjectAdapter(projects);
     		
-    		setListAdapter(adapter);
+    		ProjectlistActivity.this.setListAdapter(adapter);
     		projectlist_title_view.setText(String.format("Active Projects: %s", result.size()));
     	}
     	
