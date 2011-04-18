@@ -1,0 +1,14 @@
+package Codemeditation.DroidBoard;
+
+import roboguice.activity.RoboListActivity;
+import android.content.Intent;
+import android.os.Bundle;
+
+public class ProjectActivity extends RoboListActivity {
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		setContentView(R.layout.project_view);
+		String project_id = getIntent().getStringExtra(Intent.EXTRA_TEXT);
+	}
+
+}

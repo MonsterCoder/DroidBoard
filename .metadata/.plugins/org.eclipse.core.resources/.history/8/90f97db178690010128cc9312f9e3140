@@ -1,0 +1,7 @@
+package Codemeditation.DroidBoard;
+
+import roboguice.activity.RoboListActivity;
+
+public class ProjectActivity extends RoboListActivity {
+
+}

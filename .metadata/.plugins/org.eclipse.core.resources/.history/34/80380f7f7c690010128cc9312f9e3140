@@ -1,0 +1,12 @@
+package Codemeditation.DroidBoard;
+
+import android.os.Bundle;
+import roboguice.activity.RoboListActivity;
+
+public class ProjectActivity extends RoboListActivity {
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+
+	}
+
+}

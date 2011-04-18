@@ -1,0 +1,13 @@
+package Codemeditation.DroidBoard;
+
+import roboguice.activity.RoboActivity;
+import android.os.Bundle;
+
+public class ProjectActivity extends RoboActivity {
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		setContentView(R.layout.project_view);
+
+	}
+}
