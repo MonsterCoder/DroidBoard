@@ -1,0 +1,8 @@
+package Codemeditation.Domain;
+
+public class PhasesPage {
+	public int page;
+	public int pageSize;
+	public int totalPages;
+	public int totalItems;
+}

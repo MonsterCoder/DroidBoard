@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;Codemeditation.AgilezenApi.IKanbanApi.Refresh()&apos; to &apos;refreshProjects&apos;&#x0A;- Original project: &apos;Kanban.AgilezenApi&apos;&#x0A;- Original element: &apos;Codemeditation.AgilezenApi.IKanbanApi.Refresh()&apos;&#x0A;- Renamed element: &apos;Codemeditation.AgilezenApi.IKanbanApi.refreshProjects()&apos;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;Refresh&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;Codemeditation.AgilezenApi{IKanbanApi.java[IKanbanApi~Refresh" name="refreshProjects" references="true" stamp="1303225428095" version="1.0"/>
+</session>

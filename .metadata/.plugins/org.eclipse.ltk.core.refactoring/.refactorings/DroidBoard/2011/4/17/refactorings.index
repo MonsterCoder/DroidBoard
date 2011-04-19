@@ -1,3 +1,7 @@
 1303008824818	Delete element
 1303008831840	Delete element
 1303189218214	Rename type 'ProjectActivity'
+1303223665814	Convert local variable 'project_name' to field
+1303223694639	Convert local variable 'project_id' to field
+1303225499442	Convert local variable 'phases' to field
+1303227308949	Convert local variable 'runable' to field

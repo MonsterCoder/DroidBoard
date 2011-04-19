@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Collection;
 import java.util.List;
 
 import org.apache.http.HttpResponse;
@@ -12,6 +11,8 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 
+import Codemeditation.Domain.Phase;
+import Codemeditation.Domain.PhasesPage;
 import Codemeditation.Domain.Project;
 import Codemeditation.Domain.ProjectsPage;
 
@@ -39,19 +40,26 @@ public class AgilezenApi implements IKanbanApi {
 
 	@Override
 	public List<Project> GetProjects() {
-		if (projects == null) Refresh();		
+		if (projects == null) refreshProjects();		
 
 		return projects;
 	}
 
 	@Override
-	public void Refresh() {
+	public void refreshProjects() {
 		FetchProjects();
 	}
 	
-	private void FetchProjects() {
+
+	@Override
+	public List<Phase> GetPhases(int projectId) {
+		return FetchPage("http://agilezen.com/api/v1/projects?apikey=dabbb64a56a7454db2819405f2009b23", PhasesPage.class).items;
+		
+	}
+	
+	private <T> T FetchPage(String uri, Class<T> pagetype){
 		try {
-			httpget.setURI(new URI("http://agilezen.com/api/v1/projects?apikey=dabbb64a56a7454db2819405f2009b23"));
+			httpget.setURI(new URI(uri));
 	
 			HttpResponse response = httpclient.execute(httpget);
 			InputStream stream = response.getEntity().getContent();
@@ -61,9 +69,9 @@ public class AgilezenApi implements IKanbanApi {
 			stream.close();
 
 			Gson  gson = new Gson();
-			ProjectsPage  page = gson.fromJson(json, ProjectsPage.class);
+			T  page = gson.fromJson(json, pagetype);
 
-			this.projects = page.items;
+			return page;
 			
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
@@ -73,6 +81,11 @@ public class AgilezenApi implements IKanbanApi {
 
 			e.printStackTrace();
 		}
+		return null;
+	
 	}
-
+	
+	private void FetchProjects() {
+		this.projects = FetchPage("http://agilezen.com/api/v1/projects?apikey=dabbb64a56a7454db2819405f2009b23", ProjectsPage.class).items;
+	}
 }

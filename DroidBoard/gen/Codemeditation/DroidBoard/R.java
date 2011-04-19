@@ -42,13 +42,14 @@ public final class R {
         public static final int projectlist_title=0x7f050000;
     }
     public static final class style {
-        public static final int BulletPoint=0x7f060000;
-        public static final int Text=0x7f060001;
-        public static final int Text_Definition=0x7f060005;
-        public static final int Text_Header=0x7f060007;
-        public static final int Text_Loading=0x7f060002;
-        public static final int Text_WordTitle=0x7f060003;
-        public static final int Text_WordType=0x7f060004;
-        public static final int Title=0x7f060006;
+        public static final int BulletPoint=0x7f060001;
+        public static final int DroidBoardTheme=0x7f060000;
+        public static final int Text=0x7f060002;
+        public static final int Text_Definition=0x7f060006;
+        public static final int Text_Header=0x7f060008;
+        public static final int Text_Loading=0x7f060003;
+        public static final int Text_WordTitle=0x7f060004;
+        public static final int Text_WordType=0x7f060005;
+        public static final int Title=0x7f060007;
     }
 }

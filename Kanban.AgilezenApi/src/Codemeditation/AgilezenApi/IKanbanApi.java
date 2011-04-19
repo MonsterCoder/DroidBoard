@@ -2,6 +2,7 @@ package Codemeditation.AgilezenApi;
 
 import java.util.List;
 
+import Codemeditation.Domain.Phase;
 import Codemeditation.Domain.Project;
 
 public interface IKanbanApi {
@@ -10,5 +11,7 @@ public interface IKanbanApi {
 	
 	List<Project> GetProjects();
 	
-	void Refresh();
+	void refreshProjects();
+
+	List<Phase> GetPhases(int projectId);
 }
