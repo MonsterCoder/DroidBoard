@@ -19,18 +19,21 @@ public final class R {
         public static final int kanban_logo=0x7f020001;
     }
     public static final class id {
-        public static final int app_description=0x7f070004;
-        public static final int app_lable=0x7f070003;
+        public static final int LinearLayout01=0x7f070002;
+        public static final int app_description=0x7f070005;
+        public static final int app_lable=0x7f070004;
         public static final int description=0x7f070001;
-        public static final int icon=0x7f070002;
+        public static final int icon=0x7f070003;
         public static final int name=0x7f070000;
-        public static final int project_header=0x7f070005;
-        public static final int projectlist_title=0x7f070006;
+        public static final int project_header=0x7f070006;
+        public static final int projectlist_title=0x7f070007;
     }
     public static final class layout {
-        public static final int project_item=0x7f030000;
-        public static final int project_view=0x7f030001;
-        public static final int projectlistview=0x7f030002;
+        public static final int phase_view=0x7f030000;
+        public static final int project_item=0x7f030001;
+        public static final int project_phases_tab=0x7f030002;
+        public static final int project_view=0x7f030003;
+        public static final int projectlistview=0x7f030004;
     }
     public static final class string {
         public static final int app_description=0x7f050003;

@@ -33,7 +33,7 @@ public class ProjectlistActivity extends RoboListActivity {
     
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-    	Intent i = new Intent(ProjectlistActivity.this, ProjectActivity.class);
+    	Intent i = new Intent(ProjectlistActivity.this, ProjectPhasesTabActivity.class);
     	i.putExtra("PROJECT_ID", kanbanApi.GetProjects().get(position).id);
     	i.putExtra("PROJECT_NAME", kanbanApi.GetProjects().get(position).name);
     	startActivity(i);

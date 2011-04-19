@@ -2561,3 +2561,30 @@ com.android.ddmlib.ShellCommandUnresponsiveException
 	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.simpleLaunch(AndroidLaunchController.java:823)
 	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController.access$3(AndroidLaunchController.java:807)
 	at com.android.ide.eclipse.adt.internal.launch.AndroidLaunchController$3.run(AndroidLaunchController.java:655)
+!SESSION 2011-04-18 22:49:30.511 -----------------------------------------------
+eclipse.buildId=M20100211-1343
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_CA
+Command-line arguments:  -os linux -ws gtk -arch x86 -data /home/georgec/workplace/DroidBoard
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-04-18 22:49:31.531
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-04-19 00:15:45.236
+!MESSAGE AndroidManifest: Ignoring unknown 'te' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-04-19 00:15:45.852
+!MESSAGE AndroidManifest: Ignoring unknown 'text' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-04-19 00:15:46.749
+!MESSAGE AndroidManifest: Ignoring unknown 'te' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-04-19 00:15:47.820
+!MESSAGE AndroidManifest: Ignoring unknown 'Te' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-04-19 00:15:48.444
+!MESSAGE AndroidManifest: Ignoring unknown 'Text' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-04-19 00:15:49.677
+!MESSAGE AndroidManifest: Ignoring unknown 'TextVi' XML element
