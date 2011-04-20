@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<style name="DroidBoardTheme" parent="android:Theme.Black.NoTitleBar">
-	
+	<style name="Widget">
 	</style>
+	<style name="Widget.TabWidget">
+		<item name="android:textAppearance">@style/TextAppearance.Widget.TabWidget</item>
+	</style>
+	
+	<style name="TextAppearance">
+		<item name="android:textColorHighlight">#FFFF9200</item>
+		<item name="android:textColorLink">#5C5CFF</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+	<style name="TextAppearance.Widget">
+    </style>
 
+	<style name="TextAppearance.Widget.TabWidget">
+		<item name="android:textSize">12sp</item>
+		<item name="android:textStyle">bold</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/header_text_color</item>
+	</style>
+	
+	<style name="TextAppearance.Widget.TabWidget.TextView">
+		<item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+		<item name="android:textSize">28sp</item>
+		<item name="android:textStyle">bold</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/header_text_color</item>
+	</style>
+	
     <style name="BulletPoint">
         <item name="android:textSize">13sp</item>
         <item name="android:textColor">@android:color/black</item>

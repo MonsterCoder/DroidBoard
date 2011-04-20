@@ -2,4 +2,6 @@
 <resources>
     <color name="header_bg_color">#525252</color>
     <color name="header_text_color">#ffffff</color>
+    <color name="tab_indicator">#aaa000</color>
+    <color name="tab_text">#000000</color>
 </resources>

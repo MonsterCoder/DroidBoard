@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="Widget">
+	</style>
+	<style name="Widget.TabWidget">
+		<item name="android:textAppearance">@style/TextAppearance.Widget.TabWidget</item>
+	</style>
+	
+	<style name="TextAppearance">
+		<item name="android:textColorHighlight">#FFFF9200</item>
+		<item name="android:textColorLink">#5C5CFF</item>
+		<item name="android:textSize">16sp</item>
+		<item name="android:textStyle">normal</item>
+	</style>
+	<style name="TextAppearance.Widget">
+    </style>
+
+	<style name="TextAppearance.Widget.TabWidget">
+		<item name="android:textSize">18sp</item>
+		<item name="android:textStyle">bold</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textColor">@color/header_text_color</item>
+	</style>
+	
+    <style name="BulletPoint">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text" />
+
+    <style name="Text.Loading">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.WordTitle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.WordType">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Text.Definition">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+     <style name="Text.Header">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/header_bg_color</item>
+        <item name="android:textColor">@color/header_text_color</item>
+        <item name="android:padding">5dip</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

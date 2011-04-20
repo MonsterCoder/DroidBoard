@@ -39,7 +39,7 @@ public class ProjectPhasesTabActivity extends RoboTabActivity {
 		indicator.setHeight(23);
 		indicator.setWidth(50);
 		
-		host.addTab(host.newTabSpec("projectName").setIndicator(indicator).setContent(phaseintent));
+		host.addTab(host.newTabSpec("Project").setIndicator(indicator).setContent(phaseintent));
 			
 		handler = new Handler();
 		
