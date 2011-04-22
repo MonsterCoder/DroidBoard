@@ -10,9 +10,9 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>.link1</name>
+			<name>.link0</name>
 			<type>2</type>
-			<location>/home/georgec/android-sdk-linux_x86/platforms/android-4</location>
+			<location>/home/georgec/workplace/DroidBoard/horizontalpager</location>
 		</link>
 	</linkedResources>
 </projectDescription>

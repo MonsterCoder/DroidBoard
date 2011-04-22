@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="16" version="2.0">
+<workbench progressCount="23" version="2.0">
 <workbenchAdvisor/>
 <window height="770" maximized="true" width="1016" x="56" y="61">
 <fastViewData fastViewLocation="1024"/>
@@ -15,9 +15,9 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="104" y="30"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="30"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="124" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="130" y="30"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -35,35 +35,20 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ProjectPhasesTabActivity.java" partName="ProjectPhasesTabActivity.java" path="/home/georgec/workplace/DroidBoard/DroidBoard/src/Codemeditation/DroidBoard/ProjectPhasesTabActivity.java" title="ProjectPhasesTabActivity.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/ProjectPhasesTabActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectPhasesTabActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="509" selectionTopPixel="34"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ProjectlistActivity.java" partName="ProjectlistActivity.java" path="/home/georgec/workplace/DroidBoard/DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java" title="ProjectlistActivity.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2402" selectionTopPixel="376"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="phase_view.xml" partName="phase_view.xml" path="/home/georgec/workplace/DroidBoard/DroidBoard/res/layout/phase_view.xml" title="phase_view.xml" tooltip="DroidBoard/res/layout/phase_view.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/res/layout/phase_view.xml"/>
-</editor>
-<editor id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" partName="DroidBoard Manifest" path="/home/georgec/workplace/DroidBoard/DroidBoard/AndroidManifest.xml" title="DroidBoard Manifest" tooltip="DroidBoard/AndroidManifest.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/AndroidManifest.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PhaseActivity.java" partName="PhaseActivity.java" path="/home/georgec/workplace/DroidBoard/DroidBoard/src/Codemeditation/DroidBoard/PhaseActivity.java" title="PhaseActivity.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/PhaseActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/src/Codemeditation/DroidBoard/PhaseActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="project_phases_tab.xml" partName="project_phases_tab.xml" path="/home/georgec/workplace/DroidBoard/DroidBoard/res/layout/project_phases_tab.xml" title="project_phases_tab.xml" tooltip="DroidBoard/res/layout/project_phases_tab.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/res/layout/project_phases_tab.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" partName="R.java" path="/home/georgec/workplace/DroidBoard/DroidBoard/gen/Codemeditation/DroidBoard/R.java" title="R.java" tooltip="DroidBoard/gen/Codemeditation/DroidBoard/R.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DroidBoard/gen/Codemeditation/DroidBoard/R.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1300" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
-<view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
-<viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
-</view>
 <view id="org.eclipse.jdt.ui.TypesView" partName="Types">
 <viewState org.eclipse.jdt.ui.browsing.typestoeditor="1" workingSetName="Aggregate for window 1302730220536">
 <customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.TypesView.ClassFilter" isEnabled="false"/>
@@ -143,11 +128,10 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
-<columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="234" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="822"/>
-<DESCENDING_FIELDS IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<columnWidths org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="722" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.resourceField="108" org.eclipse.ui.ide.severityAndDescriptionField="350"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -205,7 +189,7 @@
 <view id="com.android.ide.eclipse.ddms.views.AllocTrackerView" partName="Allocation Tracker"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="com.android.ide.eclipse.editors.layout.LayoutEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -270,20 +254,18 @@
 <view id="org.eclipse.jdt.debug.ui.DisplayView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.eclipse.jdt.junit.ResultView"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
 <folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
-<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
@@ -296,7 +278,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.26558408" ratioLeft="507" ratioRight="1402" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.51079136" ratioLeft="426" ratioRight="408" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.91007197" ratioLeft="759" ratioRight="75" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -623,142 +605,133 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoardTest/test/projectlistTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/project_view.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoardTest/test/projectlistTest.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/project_phases_tab.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectPhasesTabActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/PhaseActivity.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/phase_view.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/DroidBoard/AndroidManifest.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/project_view.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/project_phases_tab.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.resources.ResourcesEditor" path="/DroidBoard/res/values/indicator_selector.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectPhasesTabActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/DroidBoard/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/PhasesListActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/project_view.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/phase_view.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/projectlistview.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/phases_list_view.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/gen/Codemeditation/DroidBoard/R.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DroidBoard/res/layout/project_item.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java"/>
 </editors>
-<item historyLabel="projectlistTest.java" index="1">
-<position info="not_deleted" x="1631" y="52"/>
-</item>
-<item historyLabel="ProjectlistActivity.java" index="0">
-<position info="not_deleted" x="980" y="0"/>
-</item>
-<item historyLabel="projectlistTest.java" index="1">
-<position info="not_deleted" x="1631" y="52"/>
-</item>
-<item historyLabel="ProjectlistActivity.java" index="0">
-<position info="not_deleted" x="1218" y="0"/>
-</item>
-<item historyLabel="projectlistTest.java" index="1">
-<position info="not_deleted" x="1631" y="52"/>
-</item>
-<item historyLabel="ProjectlistActivity.java" index="0">
-<position info="not_deleted" x="918" y="36"/>
-</item>
-<item historyLabel="project_view.xml" index="2"/>
-<item historyLabel="projectlistTest.java" index="3">
-<position info="not_deleted" x="1631" y="52"/>
-</item>
-<item historyLabel="ProjectActivity.java" index="4">
-<position info="not_deleted" x="319" y="57"/>
-</item>
-<item historyLabel="project_view.xml" index="2"/>
-<item historyLabel="project_phases_tab.xml" index="5"/>
-<item historyLabel="ProjectActivity.java" index="4">
-<position info="not_deleted" x="319" y="57"/>
-</item>
-<item historyLabel="ProjectActivity.java" index="4">
+<item historyLabel="ProjectPhasesTabActivity.java" index="0">
 <position/>
 </item>
-<item historyLabel="ProjectPhasesTabActivity.java" index="6">
+<item historyLabel="PhaseActivity.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ProjectPhasesTabActivity.java" index="0">
 <position/>
 </item>
-<item historyLabel="ProjectlistActivity.java" index="7">
+<item historyLabel="PhaseActivity.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ProjectPhasesTabActivity.java" index="6">
-<position info="not_deleted" x="1097" y="13"/>
-</item>
-<item historyLabel="PhaseActivity.java" index="8">
+<item historyLabel="DroidBoard Manifest" index="3"/>
+<item historyLabel="PhaseActivity.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="PhaseActivity.java" index="8">
-<position info="not_deleted" x="319" y="10"/>
-</item>
-<item historyLabel="phase_view.xml" index="9"/>
-<item historyLabel="ProjectPhasesTabActivity.java" index="6">
-<position/>
-</item>
-<item historyLabel="PhaseActivity.java" index="8">
-<position info="not_deleted" x="116" y="13"/>
-</item>
-<item historyLabel="DroidBoard Manifest" index="10"/>
-<item historyLabel="PhaseActivity.java" index="8">
-<position info="not_deleted" x="116" y="13"/>
-</item>
-<item historyLabel="ProjectlistActivity.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PhaseActivity.java" index="8">
-<position info="not_deleted" x="116" y="13"/>
-</item>
-<item historyLabel="ProjectlistActivity.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DroidBoard Manifest" index="10"/>
-<item historyLabel="ProjectPhasesTabActivity.java" index="6">
-<position/>
-</item>
-<item historyLabel="ProjectlistActivity.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ProjectPhasesTabActivity.java" index="6">
-<position/>
-</item>
-<item historyLabel="ProjectPhasesTabActivity.java" index="6">
-<position/>
-</item>
-<item historyLabel="ProjectlistActivity.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ProjectPhasesTabActivity.java" index="6">
-<position/>
-</item>
-<item historyLabel="PhaseActivity.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ProjectPhasesTabActivity.java" index="6">
-<position/>
-</item>
-<item historyLabel="PhaseActivity.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DroidBoard Manifest" index="10"/>
-<item historyLabel="PhaseActivity.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="DroidBoard Manifest" index="10"/>
-<item historyLabel="ProjectPhasesTabActivity.java" index="6">
+<item historyLabel="DroidBoard Manifest" index="3"/>
+<item historyLabel="ProjectPhasesTabActivity.java" index="0">
 <position info="not_deleted" x="1000" y="0"/>
 </item>
-<item historyLabel="phase_view.xml" index="9"/>
-<item historyLabel="DroidBoard Manifest" index="10"/>
-<item historyLabel="PhaseActivity.java" index="8">
+<item historyLabel="phase_view.xml" index="2"/>
+<item historyLabel="DroidBoard Manifest" index="3"/>
+<item historyLabel="PhaseActivity.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="project_view.xml" index="11"/>
-<item historyLabel="project_phases_tab.xml" index="12"/>
-<item historyLabel="PhaseActivity.java" index="8">
+<item historyLabel="project_view.xml" index="4"/>
+<item historyLabel="project_phases_tab.xml" index="5"/>
+<item historyLabel="PhaseActivity.java" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ProjectPhasesTabActivity.java" index="6">
+<item historyLabel="ProjectPhasesTabActivity.java" index="0">
 <position info="not_deleted" x="509" y="0"/>
+</item>
+<item historyLabel="project_view.xml" index="4"/>
+<item historyLabel="ProjectPhasesTabActivity.java" index="0">
+<position info="not_deleted" x="509" y="0"/>
+</item>
+<item historyLabel="project_phases_tab.xml" index="5"/>
+<item historyLabel="indicator_selector.xml" index="6"/>
+<item historyLabel="project_phases_tab.xml" index="5"/>
+<item historyLabel="ProjectPhasesTabActivity.java" index="7">
+<position info="not_deleted" x="1071" y="0"/>
+</item>
+<item historyLabel="DroidBoard Manifest" index="8"/>
+<item historyLabel="ProjectPhasesTabActivity.java" index="7">
+<position info="not_deleted" x="1071" y="0"/>
+</item>
+<item historyLabel="PhasesListActivity.java" index="9">
+<position/>
+</item>
+<item historyLabel="PhasesListActivity.java" index="9">
+<position/>
+</item>
+<item historyLabel="PhasesListActivity.java" index="9">
+<position/>
+</item>
+<item historyLabel="PhasesListActivity.java" index="9">
+<position/>
+</item>
+<item historyLabel="ProjectlistActivity.java" index="10">
+<position info="not_deleted" x="1156" y="0"/>
+</item>
+<item historyLabel="PhasesListActivity.java" index="9">
+<position info="not_deleted" x="695" y="41"/>
 </item>
 <item historyLabel="project_view.xml" index="11"/>
-<item historyLabel="ProjectPhasesTabActivity.java" index="6">
-<position info="not_deleted" x="509" y="0"/>
+<item historyLabel="phase_view.xml" index="12"/>
+<item historyLabel="projectlistview.xml" index="13"/>
+<item historyLabel="phase_view.xml" index="12"/>
+<item historyLabel="project_view.xml" index="11"/>
+<item historyLabel="PhasesListActivity.java" index="9">
+<position info="not_deleted" x="695" y="41"/>
 </item>
-<item active="true" historyLabel="project_phases_tab.xml" index="12"/>
+<item historyLabel="projectlistview.xml" index="13"/>
+<item historyLabel="PhasesListActivity.java" index="9">
+<position info="not_deleted" x="695" y="41"/>
+</item>
+<item historyLabel="phase_view.xml" index="12"/>
+<item historyLabel="PhasesListActivity.java" index="9">
+<position info="not_deleted" x="718" y="16"/>
+</item>
+<item historyLabel="phases_list_view.xml" index="14"/>
+<item historyLabel="PhasesListActivity.java" index="9">
+<position info="not_deleted" x="770" y="0"/>
+</item>
+<item historyLabel="phase_view.xml" index="12"/>
+<item historyLabel="ProjectlistActivity.java" index="10">
+<position info="not_deleted" x="1557" y="0"/>
+</item>
+<item historyLabel="R.java" index="15">
+<position/>
+</item>
+<item historyLabel="ProjectlistActivity.java" index="10">
+<position info="not_deleted" x="1557" y="0"/>
+</item>
+<item historyLabel="project_item.xml" index="16"/>
+<item historyLabel="R.java" index="15">
+<position info="not_deleted" x="1195" y="0"/>
+</item>
+<item historyLabel="ProjectlistActivity.java" index="10">
+<position info="not_deleted" x="1557" y="0"/>
+</item>
+<item historyLabel="R.java" index="15">
+<position info="not_deleted" x="1300" y="0"/>
+</item>
+<item active="true" historyLabel="ProjectlistActivity.java" index="17">
+<position info="not_deleted" x="2080" y="0"/>
+</item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -776,23 +749,38 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="project_phases_tab.xml" tooltip="DroidBoard/res/layout/project_phases_tab.xml">
-<persistable path="/DroidBoard/res/layout/project_phases_tab.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="project_item.xml" tooltip="DroidBoard/res/layout/project_item.xml">
+<persistable path="/DroidBoard/res/layout/project_item.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="project_view.xml" tooltip="DroidBoard/res/layout/project_view.xml">
-<persistable path="/DroidBoard/res/layout/project_view.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="R.java" tooltip="DroidBoard/gen/Codemeditation/DroidBoard/R.java">
+<persistable path="/DroidBoard/gen/Codemeditation/DroidBoard/R.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PhaseActivity.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/PhaseActivity.java">
-<persistable path="/DroidBoard/src/Codemeditation/DroidBoard/PhaseActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="DroidBoard/AndroidManifest.xml">
-<persistable path="/DroidBoard/AndroidManifest.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="phases_list_view.xml" tooltip="DroidBoard/res/layout/phases_list_view.xml">
+<persistable path="/DroidBoard/res/layout/phases_list_view.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="phase_view.xml" tooltip="DroidBoard/res/layout/phase_view.xml">
 <persistable path="/DroidBoard/res/layout/phase_view.xml"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="projectlistview.xml" tooltip="DroidBoard/res/layout/projectlistview.xml">
+<persistable path="/DroidBoard/res/layout/projectlistview.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="project_view.xml" tooltip="DroidBoard/res/layout/project_view.xml">
+<persistable path="/DroidBoard/res/layout/project_view.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PhasesListActivity.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/PhasesListActivity.java">
+<persistable path="/DroidBoard/src/Codemeditation/DroidBoard/PhasesListActivity.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ProjectlistActivity.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java">
 <persistable path="/DroidBoard/src/Codemeditation/DroidBoard/ProjectlistActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="DroidBoard/AndroidManifest.xml">
+<persistable path="/DroidBoard/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="project_phases_tab.xml" tooltip="DroidBoard/res/layout/project_phases_tab.xml">
+<persistable path="/DroidBoard/res/layout/project_phases_tab.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PhaseActivity.java" tooltip="DroidBoard/src/Codemeditation/DroidBoard/PhaseActivity.java">
+<persistable path="/DroidBoard/src/Codemeditation/DroidBoard/PhaseActivity.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="projectlistTest.java" tooltip="DroidBoardTest/test/projectlistTest.java">
 <persistable path="/DroidBoardTest/test/projectlistTest.java"/>
@@ -803,20 +791,8 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GuiceTestRunner.java" tooltip="DroidBoardTest/test/GuiceTestRunner.java">
 <persistable path="/DroidBoardTest/test/GuiceTestRunner.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="projectlistview.xml" tooltip="DroidBoard/res/layout/projectlistview.xml">
-<persistable path="/DroidBoard/res/layout/projectlistview.xml"/>
-</file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Mockito.class" tooltip="org.mockito.Mockito">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=DroidBoardTest/\/home\/georgec\/workplace\/DroidBoard\/libs\/mockito-all-1.8.5.jar&lt;org.mockito(Mockito.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestRunnerConfigurationModule.java" tooltip="DroidBoardTest/test/TestRunnerConfigurationModule.java">
-<persistable path="/DroidBoardTest/test/TestRunnerConfigurationModule.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApiTest.java" tooltip="DroidBoardTest/apitest/AgilezenApiTest.java">
-<persistable path="/DroidBoardTest/apitest/AgilezenApiTest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AgilezenApiTest.java" tooltip="Kanban.AgilezenApi/apitest/AgilezenApiTest.java">
-<persistable path="/Kanban.AgilezenApi/apitest/AgilezenApiTest.java"/>
 </file>
 </mruList>
 </workbench>

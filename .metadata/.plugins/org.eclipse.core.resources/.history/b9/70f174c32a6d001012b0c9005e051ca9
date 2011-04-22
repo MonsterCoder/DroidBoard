@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="70dip"
+  android:orientation ="vertical">
+ 
+  <TextView 
+  	android:id="@+id/name"
+  	android:singleLine = "true"
+  	android:textSize="14sp"
+  	style="@style/Title"
+  	/>
+   <TextView 
+  	android:id="@+id/description"
+  	android:ellipsize="end"
+  	style="@style/Text.Definition"
+  	android:layout_marginLeft="5dip" />
+  	/>
+</LinearLayout>

@@ -27,13 +27,13 @@ public class ProjectlistActivity extends RoboListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-		setContentView(R.layout.projectlistview);
+		setContentView(R.layout.projects_list_view);
         new LoadProjectsTask().execute(null);
     }
     
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
-    	Intent i = new Intent(ProjectlistActivity.this, ProjectPhasesTabActivity.class);
+    	Intent i = new Intent(ProjectlistActivity.this, PhasesListActivity.class);
     	i.putExtra("PROJECT_ID", kanbanApi.GetProjects().get(position).id);
     	i.putExtra("PROJECT_NAME", kanbanApi.GetProjects().get(position).name);
     	startActivity(i);
