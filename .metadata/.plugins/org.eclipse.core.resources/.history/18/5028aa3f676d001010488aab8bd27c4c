@@ -66,8 +66,9 @@ public class PhasesListActivity extends RoboActivity {
 		
 		runnable = new Runnable() {
 
-		@Override
-		public void run() {
+			@Override
+			public void run() {
+
 			       for (int i = 0; i < phases.size(); i++) {
 			    	   	LinearLayout layout = new LinearLayout(PhasesListActivity.this);
 			            TextView textView = new TextView(getApplicationContext());
@@ -91,6 +92,7 @@ public class PhasesListActivity extends RoboActivity {
 		
 		LoadPhasesctsTask async = new LoadPhasesctsTask();
 		async.execute(null);	
+		
 	}
 	
     private class StoryAdapter extends ArrayAdapter<Story> {
@@ -107,8 +109,8 @@ public class PhasesListActivity extends RoboActivity {
 			LayoutInflater inflater = getLayoutInflater();
 			View item_row = inflater.inflate(R.layout.story_item, parent, false);
 			
-			TextView name = (TextView)item_row.findViewById(R.id.title);
-			name.setText(String.format("%d", stories[position].id));
+			TextView name = (TextView)item_row.findViewById(R.id.id);
+			/// name.setText(stories[position].id);
 			
 			TextView text = (TextView)item_row.findViewById(R.id.text);
 			text.setText(stories[position].text );

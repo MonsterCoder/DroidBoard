@@ -6,9 +6,10 @@
   android:orientation ="vertical">
  
   <TextView 
-  	android:id="@+id/title"
+  	android:id="@+id/id"
   	android:singleLine = "true"
   	android:textSize="14sp"
+  	android:textColor="#000000"
   	style="@style/Title"
   	/>
    <TextView 

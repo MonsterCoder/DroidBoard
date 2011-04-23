@@ -107,8 +107,8 @@ public class PhasesListActivity extends RoboActivity {
 			LayoutInflater inflater = getLayoutInflater();
 			View item_row = inflater.inflate(R.layout.story_item, parent, false);
 			
-			TextView name = (TextView)item_row.findViewById(R.id.title);
-			name.setText(String.format("%d", stories[position].id));
+			TextView name = (TextView)item_row.findViewById(R.id.id);
+			/// name.setText(stories[position].id);
 			
 			TextView text = (TextView)item_row.findViewById(R.id.text);
 			text.setText(stories[position].text );
