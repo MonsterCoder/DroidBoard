@@ -52,15 +52,16 @@ public class PhasesListActivity extends RoboActivity {
 	            new HorizontalPager.OnScreenSwitchListener() {
 	                @Override
 	                public void onScreenSwitched(final int screen) {
-
+	                	ListView currentView = storyListViews.get(screen);
 	                	List<Story> stories_array = stories.get(screen);
 	                	if (stories_array == null)
 	                	{
 	                		stories_array = kanbanApi.GetStories(projectId, phases.get(screen).id);
-	                		stories.set(screen, stories_array);
-							StoryAdapter adapter = new StoryAdapter(stories_array.toArray(new Story[0]));
-		                	storyListViews.get(screen).setAdapter(adapter);;
+	                		stories.add(screen, stories_array);
 	                	}
+	                	
+						StoryAdapter adapter = new StoryAdapter(stories_array.toArray(new Story[0]));
+						currentView.setAdapter(adapter);
 	                }
 	            };
 		
@@ -92,7 +93,6 @@ public class PhasesListActivity extends RoboActivity {
 			            storyListViews.add(i, storiesList);
 
 			            layout.addView(storiesList);
-			            stories.add(i, null);
 			       
 			        }
 
