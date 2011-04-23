@@ -15,6 +15,8 @@ import Codemeditation.Domain.Phase;
 import Codemeditation.Domain.PhasesPage;
 import Codemeditation.Domain.Project;
 import Codemeditation.Domain.ProjectsPage;
+import Codemeditation.Domain.StoriesPage;
+import Codemeditation.Domain.Story;
 
 import com.google.gson.Gson;
 import com.google.inject.Inject;
@@ -44,18 +46,26 @@ public class AgilezenApi implements IKanbanApi {
 
 		return projects;
 	}
-
+	
+	@Override
+	public List<Phase> GetPhases(int projectId) {
+		return FetchPage(String.format("https://agilezen.com/api/v1/projects/%s/phases?apikey=dabbb64a56a7454db2819405f2009b23", projectId), PhasesPage.class).items;
+	}
+	
+	@Override
+	public List<Story> GetStories(int projectId, int phaseId) {	
+		return FetchPage(String.format("https://agilezen.com/api/v1/projects/%s/stories?apikey=dabbb64a56a7454db2819405f2009b23&where=phase:%s", projectId, phaseId), StoriesPage.class).items;
+	}
+	
+	private void FetchProjects() {
+		this.projects = FetchPage("https://agilezen.com/api/v1/projects?apikey=dabbb64a56a7454db2819405f2009b23", ProjectsPage.class).items;
+	}
+	
 	@Override
 	public void refreshProjects() {
 		FetchProjects();
 	}
 	
-
-	@Override
-	public List<Phase> GetPhases(int projectId) {
-		return FetchPage(String.format("http://agilezen.com/api/v1/projects/%s/phases?apikey=dabbb64a56a7454db2819405f2009b23", projectId), PhasesPage.class).items;
-		
-	}
 	
 	private <T> T FetchPage(String uri, Class<T> pagetype){
 		try {
@@ -83,9 +93,5 @@ public class AgilezenApi implements IKanbanApi {
 		}
 		return null;
 	
-	}
-	
-	private void FetchProjects() {
-		this.projects = FetchPage("http://agilezen.com/api/v1/projects?apikey=dabbb64a56a7454db2819405f2009b23", ProjectsPage.class).items;
 	}
 }
