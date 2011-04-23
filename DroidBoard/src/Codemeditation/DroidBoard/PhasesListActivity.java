@@ -8,21 +8,18 @@ import Codemeditation.AgilezenApi.IKanbanApi;
 import Codemeditation.Domain.Phase;
 import Codemeditation.Domain.Story;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.Rect;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.LinearLayout.LayoutParams;
 
 import com.github.ysamlan.horizontalpager.HorizontalPager;
 import com.google.inject.Inject;
@@ -34,7 +31,7 @@ public class PhasesListActivity extends RoboActivity {
 	private List<Phase> phases;
 	private Handler handler;
 	private Runnable runnable;
-	private List<ListView> storyListViews;
+	private List<View> storyListViews;
 	private List<List<Story>> stories;
 	
 	@Override
@@ -48,7 +45,7 @@ public class PhasesListActivity extends RoboActivity {
 		projectName = bundle.getString("PROJECT_NAME");
 		
 		stories = new ArrayList<List<Story>>();
-        storyListViews= new ArrayList<ListView>();
+        storyListViews= new ArrayList<View>();
         
 		final HorizontalPager.OnScreenSwitchListener onScreenSwitchListener =
 	            new HorizontalPager.OnScreenSwitchListener() {
@@ -79,23 +76,20 @@ public class PhasesListActivity extends RoboActivity {
 										        setContentView(realViewSwitcher);
 										        
 										       for (int i = 0; i < phases.size(); i++) {
-										    	   	LinearLayout layout = new LinearLayout(PhasesListActivity.this);
-										    	    realViewSwitcher.addView(layout);
-										    	    
-										    	   	layout.setLayoutParams(new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 2f));
-										     
-										            
-										            ListView storiesList = new ListView(PhasesListActivity.this);
-										            
-										            storyListViews.add(i, storiesList);
-							
-										            layout.addView(storiesList);
-										            stories.add(i, null);
-										       
+										    	   
+										    	   Context context = getApplicationContext();
+										    	   LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+										    	   View view =  inflater.inflate(R.layout.phase_page_view, null);
+										    	   TextView title =  (TextView)view.findViewById(R.id.phase_name);
+										    	   title.setText(phases.get(i).name);
+										    	   
+										    	   realViewSwitcher.addView(view);
+										    	   
+										    	   storyListViews.add(i, view);
+										           stories.add(i, null);									       
 										        }
 										       
 										       new	LoadStoriesTask(0).execute(null);
-							
 										}	
 		};
 		
@@ -118,7 +112,7 @@ public class PhasesListActivity extends RoboActivity {
 			
 			TextView name = (TextView)item_row.findViewById(R.id.title);
 			name.setText(String.format("%d", stories[position].id));
-			
+		
 			TextView text = (TextView)item_row.findViewById(R.id.text);
 			text.setText(stories[position].text );
 			return item_row;
@@ -170,8 +164,11 @@ public class PhasesListActivity extends RoboActivity {
 		@Override
 		protected void onPostExecute(Void result) {
 			if (dialog != null) dialog.dismiss();
+			View view = storyListViews.get(screen);
+			ListView list = (ListView)view.findViewById(R.id.story_list);
 			StoryAdapter adapter = new StoryAdapter(stories.get(screen).toArray(new Story[0]));
-        	storyListViews.get(screen).setAdapter(adapter);;
+			list.setAdapter(adapter);
+
 			super.onPostExecute(result);
 		}
     }
