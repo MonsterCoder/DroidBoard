@@ -53,7 +53,7 @@ public class AgilezenApi implements IKanbanApi {
 
 	@Override
 	public List<Phase> GetPhases(int projectId) {
-		return FetchPage("http://agilezen.com/api/v1/projects?apikey=dabbb64a56a7454db2819405f2009b23", PhasesPage.class).items;
+		return FetchPage(String.format("http://agilezen.com/api/v1/projects/%s/phases?apikey=dabbb64a56a7454db2819405f2009b23", projectId), PhasesPage.class).items;
 		
 	}
 	

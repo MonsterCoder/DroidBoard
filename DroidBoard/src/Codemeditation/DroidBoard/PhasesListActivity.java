@@ -7,10 +7,14 @@ import Codemeditation.AgilezenApi.IKanbanApi;
 import Codemeditation.Domain.Phase;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.Gravity;
+import android.widget.TextView;
 
+import com.github.ysamlan.horizontalpager.HorizontalPager;
 import com.google.inject.Inject;
 
 public class PhasesListActivity extends RoboActivity {
@@ -30,7 +34,14 @@ public class PhasesListActivity extends RoboActivity {
 		Bundle bundle = intent.getExtras();
 		projectId = bundle.getInt("PROJECT_ID");
 		projectName = bundle.getString("PROJECT_NAME");
-				
+		
+		 // Create the view switcher
+        final HorizontalPager realViewSwitcher = new HorizontalPager(getApplicationContext());
+        // Add some views to it
+        final int[] backgroundColors =
+                { Color.RED, Color.BLUE, Color.CYAN, Color.GREEN, Color.YELLOW };
+        
+
 		handler = new Handler();
 		
 		runnable = new Runnable() {
@@ -38,7 +49,17 @@ public class PhasesListActivity extends RoboActivity {
 			@Override
 			public void run() {
 
-				
+			       for (int i = 0; i < phases.size(); i++) {
+			            TextView textView = new TextView(getApplicationContext());
+			            textView.setText(phases.get(i).name);
+			            textView.setTextSize(20);
+			            textView.setTextColor(Color.WHITE);
+			            textView.setGravity(Gravity.TOP);
+			            realViewSwitcher.addView(textView);
+			        }
+
+			        // set as content view
+			        setContentView(realViewSwitcher);
 			}
 			
 		};
