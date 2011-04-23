@@ -56,7 +56,10 @@ public class PhasesListActivity extends RoboActivity {
 	                	List<Story> stories_array = stories.get(screen);
 	                	if (stories_array == null)
 	                	{
-	                	   new	LoadStoriesctsTask(screen).execute(null);
+	                		stories_array = kanbanApi.GetStories(projectId, phases.get(screen).id);
+	                		stories.set(screen, stories_array);
+							StoryAdapter adapter = new StoryAdapter(stories_array.toArray(new Story[0]));
+		                	storyListViews.get(screen).setAdapter(adapter);;
 	                	}
 	                }
 	            };
@@ -143,34 +146,6 @@ public class PhasesListActivity extends RoboActivity {
 			handler.post(runnable);
 			super.onPostExecute(result);
 		}
-    }
-    
-    private class LoadStoriesctsTask extends AsyncTask<Void, Void, Void>{
-    	private ProgressDialog dialog;
-    	private int screen;
-    	
-    	public LoadStoriesctsTask(int screen) {
-    		this.screen = screen;
-    	}
 
-		@Override
-    	protected void onPreExecute() {
-    		dialog = ProgressDialog.show(PhasesListActivity.this, "", "Loading stories ...", true);
-    	}
-		
-		@Override
-		protected Void doInBackground(Void... params) {
-      		List<Story> stories_array = kanbanApi.GetStories(projectId, phases.get(screen).id);
-    		stories.set(screen, stories_array);
-    		return null;
-		}
-    	
-		@Override
-		protected void onPostExecute(Void result) {
-			if (dialog != null) dialog.dismiss();
-			StoryAdapter adapter = new StoryAdapter(stories.get(screen).toArray(new Story[0]));
-        	storyListViews.get(screen).setAdapter(adapter);;
-			super.onPostExecute(result);
-		}
     }
 }

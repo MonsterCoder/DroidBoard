@@ -162,14 +162,14 @@ public class PhasesListActivity extends RoboActivity {
 		protected Void doInBackground(Void... params) {
       		List<Story> stories_array = kanbanApi.GetStories(projectId, phases.get(screen).id);
     		stories.set(screen, stories_array);
+			StoryAdapter adapter = new StoryAdapter(stories_array.toArray(new Story[0]));
+        	storyListViews.get(screen).setAdapter(adapter);;
     		return null;
 		}
     	
 		@Override
 		protected void onPostExecute(Void result) {
 			if (dialog != null) dialog.dismiss();
-			StoryAdapter adapter = new StoryAdapter(stories.get(screen).toArray(new Story[0]));
-        	storyListViews.get(screen).setAdapter(adapter);;
 			super.onPostExecute(result);
 		}
     }
