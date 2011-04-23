@@ -5,5 +5,4 @@ public class Phase {
 	public String name;
 	public String description;
 	public int index;
-	public int limit = -1;
 }

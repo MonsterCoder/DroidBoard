@@ -81,10 +81,7 @@ public class PhasesListActivity extends RoboActivity {
 										    	   LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 										    	   View view =  inflater.inflate(R.layout.phase_page_view, null);
 										    	   TextView title =  (TextView)view.findViewById(R.id.phase_name);
-										    	   
-										    	   Phase phase = phases.get(i);
-										    	   String text = phase.limit > 0 ? String.format("%s(%d)",phase.name, phase.limit) : String.format("%s",phase.name);
-										    	   title.setText(text);
+										    	   title.setText(phases.get(i).name);
 										    	   
 										    	   realViewSwitcher.addView(view);
 										    	   

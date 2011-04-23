@@ -10,7 +10,6 @@ INDEX VERSION 1.126+/home/georgec/workplace/DroidBoard/.metadata/.plugins/org.ec
 1189062746.index
 3779518527.index
 735748295.index
-3973219143.index
 3765020915.index
 2270109089.index
 2686503099.index
