@@ -64,7 +64,7 @@ public class PhasesListActivity extends RoboActivity {
         final HorizontalPager realViewSwitcher = new HorizontalPager(getApplicationContext());
 
         realViewSwitcher.setOnScreenSwitchListener(onScreenSwitchListener);
-
+        
 		handler = new Handler();
 		
 		runnable = new Runnable() {
@@ -168,6 +168,7 @@ public class PhasesListActivity extends RoboActivity {
 		protected void onPostExecute(Void result) {
 			if (dialog != null) dialog.dismiss();
 			View view = storyListViews.get(screen);
+			
 			ListView list = (ListView)view.findViewById(R.id.story_list);
 			StoryAdapter adapter = new StoryAdapter(stories.get(screen).toArray(new Story[0]));
 			list.setAdapter(adapter);

@@ -17,18 +17,28 @@ public final class R {
         public static final int tab_text=0x7f040003;
     }
     public static final class drawable {
-        public static final int icon=0x7f020000;
-        public static final int kanban_logo=0x7f020001;
+        public static final int app_notes=0x7f020000;
+        public static final int ic_menu_compose=0x7f020001;
+        public static final int ic_menu_delete=0x7f020002;
+        public static final int ic_menu_edit=0x7f020003;
+        public static final int ic_menu_revert=0x7f020004;
+        public static final int ic_menu_save=0x7f020005;
+        public static final int icon=0x7f020006;
+        public static final int kanban_logo=0x7f020007;
+        public static final int live_folder_notes=0x7f020008;
+        public static final int meditation=0x7f020009;
+        public static final int story_background=0x7f02000a;
+        public static final int woodboard=0x7f02000b;
     }
     public static final class id {
         public static final int app_description=0x7f070006;
         public static final int app_lable=0x7f070005;
-        public static final int description=0x7f070003;
-        public static final int icon=0x7f070004;
-        public static final int name=0x7f070002;
-        public static final int phase_name=0x7f070000;
+        public static final int description=0x7f070004;
+        public static final int icon=0x7f070000;
+        public static final int name=0x7f070003;
+        public static final int phase_name=0x7f070001;
         public static final int projectlist_title=0x7f070007;
-        public static final int story_list=0x7f070001;
+        public static final int story_list=0x7f070002;
         public static final int text=0x7f070009;
         public static final int title=0x7f070008;
     }
@@ -47,18 +57,21 @@ public final class R {
     }
     public static final class style {
         public static final int BulletPoint=0x7f060006;
-        public static final int DroidBoardTheme=0x7f06000e;
+        public static final int DroidBoardTheme=0x7f060011;
+        public static final int Story_text=0x7f06000c;
+        public static final int Story_title=0x7f06000e;
         public static final int Text=0x7f060007;
         public static final int Text_Definition=0x7f06000b;
-        public static final int Text_Header=0x7f06000d;
+        public static final int Text_Header=0x7f06000f;
         public static final int Text_Loading=0x7f060008;
+        public static final int Text_PhaseHeader=0x7f060010;
         public static final int Text_WordTitle=0x7f060009;
         public static final int Text_WordType=0x7f06000a;
         public static final int TextAppearance=0x7f060002;
         public static final int TextAppearance_Widget=0x7f060003;
         public static final int TextAppearance_Widget_TabWidget=0x7f060004;
         public static final int TextAppearance_Widget_TabWidget_TextView=0x7f060005;
-        public static final int Title=0x7f06000c;
+        public static final int Title=0x7f06000d;
         public static final int Widget=0x7f060000;
         public static final int Widget_TabWidget=0x7f060001;
     }

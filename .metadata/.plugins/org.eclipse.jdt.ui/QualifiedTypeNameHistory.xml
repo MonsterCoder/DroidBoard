@@ -14,7 +14,6 @@
 <fullyQualifiedTypeName name="android.widget.ListAdapter"/>
 <fullyQualifiedTypeName name="android.widget.ArrayAdapter"/>
 <fullyQualifiedTypeName name="android.R.layout"/>
-<fullyQualifiedTypeName name="Codemeditation.DroidBoard.R.id"/>
 <fullyQualifiedTypeName name="org.mockito.Mock"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -22,4 +21,7 @@
 <fullyQualifiedTypeName name="android.R.id"/>
 <fullyQualifiedTypeName name="Codemeditation.DroidBoard.R"/>
 <fullyQualifiedTypeName name="Codemeditation.DroidBoard.R.layout"/>
+<fullyQualifiedTypeName name="android.graphics.Color"/>
+<fullyQualifiedTypeName name="Codemeditation.DroidBoard.R.id"/>
+<fullyQualifiedTypeName name="Codemeditation.DroidBoard.R.drawable"/>
 </qualifiedTypeNameHistroy>

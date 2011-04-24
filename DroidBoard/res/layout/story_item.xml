@@ -3,17 +3,25 @@
   xmlns:android="http://schemas.android.com/apk/res/android"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
-  android:orientation ="vertical">
- 
+  android:orientation ="vertical"
+  android:paddingLeft="10dip"
+  android:paddingRight="10dip"
+  android:paddingTop="5dip"
+   android:paddingBottom="5dip"
+   android:layout_marginBottom="10dip"
+   android:background="@drawable/story_background"
+  >
   <TextView 
   	android:id="@+id/title"
   	android:singleLine = "true"
-  	android:textSize="14sp"
-  	style="@style/Title"
+  	android:textSize="13sp"
+  	style="@style/Story_title"
   	/>
    <TextView 
   	android:id="@+id/text"
-  	style="@style/Text.Definition"
+  	style="@style/Story_text"
   	android:layout_marginLeft="5dip" />
   	/>
 </LinearLayout>
+
+
