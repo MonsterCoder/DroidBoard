@@ -7,9 +7,9 @@
   android:paddingLeft="10dip"
   android:paddingRight="10dip"
   android:paddingTop="5dip"
-  android:paddingBottom="5dip"
-  android:layout_marginBottom="10dip"
-  android:background="@drawable/story_background"
+   android:paddingBottom="5dip"
+   android:layout_marginBottom="10dip"
+   android:background="@drawable/story_background"
   >
   <TextView 
   	android:id="@+id/title"
