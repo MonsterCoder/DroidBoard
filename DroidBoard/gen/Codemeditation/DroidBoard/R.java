@@ -13,6 +13,7 @@ public final class R {
     public static final class color {
         public static final int header_bg_color=0x7f040000;
         public static final int header_text_color=0x7f040001;
+        public static final int moving_story=0x7f040004;
         public static final int tab_indicator=0x7f040002;
         public static final int tab_text=0x7f040003;
     }

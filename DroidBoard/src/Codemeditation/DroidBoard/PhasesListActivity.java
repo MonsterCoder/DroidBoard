@@ -20,6 +20,8 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.ericharlow.DragNDrop.DragNDropListView;
+import com.ericharlow.DragNDrop.DropListener;
+import com.ericharlow.DragNDrop.RemoveListener;
 import com.github.ysamlan.horizontalpager.HorizontalPager;
 import com.google.inject.Inject;
 
@@ -97,12 +99,13 @@ public class PhasesListActivity extends RoboActivity {
 		
 		new LoadPhasesTask().execute(null);	
 	}
-	
-    private class StoryAdapter extends ArrayAdapter<Story> {
-    	
-		private Story[] stories;
 
-		public StoryAdapter(Story[] stories) {
+	
+    private class StoryAdapter extends ArrayAdapter<Story> implements RemoveListener, DropListener {
+    	
+		private List<Story> stories;
+
+		public StoryAdapter(List<Story> stories) {
 			super(PhasesListActivity.this, R.layout.story_item, R.id.name, stories);
 			this.stories = stories;
 		}
@@ -113,11 +116,23 @@ public class PhasesListActivity extends RoboActivity {
 			View item_row = inflater.inflate(R.layout.story_item, parent, false);
 			
 			TextView name = (TextView)item_row.findViewById(R.id.title);
-			name.setText(String.format("%d", stories[position].id));
+			name.setText(String.format("%d", stories.get(position).id));
 		
 			TextView text = (TextView)item_row.findViewById(R.id.text);
-			text.setText(stories[position].text );
+			text.setText(stories.get(position).text );
 			return item_row;
+		}
+
+		@Override
+		public void onRemove(int which) {
+			stories.remove(which);	
+		}
+
+		@Override
+		public void onDrop(int from, int to) {
+			Story storyFrom = stories.get(from);
+			stories.remove(from);
+			stories.add(to, storyFrom);
 		}
     }
 
@@ -158,7 +173,7 @@ public class PhasesListActivity extends RoboActivity {
 		
 		@Override
 		protected Void doInBackground(Void... params) {
-      		List<Story> stories_array = kanbanApi.GetStories(projectId, phases.get(screen).id);
+			List<Story> stories_array = kanbanApi.GetStories(projectId, phases.get(screen).id);
     		stories.set(screen, stories_array);
     		return null;
 		}
@@ -170,9 +185,16 @@ public class PhasesListActivity extends RoboActivity {
 			
 			DragNDropListView list = (DragNDropListView)view.findViewById(R.id.story_list);
 			list.setContext(PhasesListActivity.this);
-			StoryAdapter adapter = new StoryAdapter(stories.get(screen).toArray(new Story[0]));
-			list.setAdapter(adapter);
-
+			StoryAdapter adapter = (StoryAdapter)list.getAdapter();
+			if (adapter == null) {
+				adapter = new StoryAdapter(stories.get(screen));
+				list.setAdapter(adapter);
+				list.setDropListener(adapter);
+				list.setRemoveListener(adapter);
+			} else {
+				list.invalidate();
+			}
+			
 			super.onPostExecute(result);
 		}
     }

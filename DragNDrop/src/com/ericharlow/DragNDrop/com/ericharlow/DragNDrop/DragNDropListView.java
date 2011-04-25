@@ -16,6 +16,8 @@
 
 package com.ericharlow.DragNDrop;
 
+import android.R;
+import android.R.color;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.PixelFormat;
@@ -44,6 +46,8 @@ public class DragNDropListView extends ListView {
 	DragListener mDragListener;
 
 	private Context context;
+
+	private int defaultBackgroundColor;
 	
 	public DragNDropListView(Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -98,8 +102,10 @@ public class DragNDropListView extends ListView {
 				mDragMode = false;
 				mEndPosition = pointToPosition(x,y);
 				stopDrag(mStartPosition - getFirstVisiblePosition());
-				if (mDropListener != null && mStartPosition != INVALID_POSITION && mEndPosition != INVALID_POSITION) 
+				if (mDropListener != null && mStartPosition != INVALID_POSITION && mEndPosition != INVALID_POSITION) {
 	        		 mDropListener.onDrop(mStartPosition, mEndPosition);
+	        		 this.invalidateViews();
+				}
 				break;
 		}
 		return true;
@@ -115,8 +121,10 @@ public class DragNDropListView extends ListView {
 					.getSystemService(Context.WINDOW_SERVICE);
 			mWindowManager.updateViewLayout(mDragView, layoutParams);
 
-			if (mDragListener != null)
+			if (mDragListener != null){
+			
 				mDragListener.onDrag(x, y, null);// change null to "this" when ready to use
+			}
 		}
 	}
 
@@ -128,13 +136,18 @@ public class DragNDropListView extends ListView {
 		if (item == null) return;
 		item.setDrawingCacheEnabled(true);
 	
-		if (mDragListener != null)
+		if (mDragListener != null) {
+			
 			mDragListener.onStartDrag(item);
+		}
 		
         // Create a copy of the drawing cache so that it does not get recycled
         // by the framework when the list tries to clean up memory
         Bitmap bitmap = Bitmap.createBitmap(item.getDrawingCache());
-        
+		
+		defaultBackgroundColor = item.getDrawingCacheBackgroundColor();
+		item.setVisibility(View.INVISIBLE);
+		
         WindowManager.LayoutParams mWindowParams = new WindowManager.LayoutParams();
         mWindowParams.gravity = Gravity.TOP;
         mWindowParams.x = 0;
@@ -163,6 +176,9 @@ public class DragNDropListView extends ListView {
 		if (mDragView != null) {
 			if (mDragListener != null)
 				mDragListener.onStopDrag(getChildAt(itemIndex));
+			View itemView = getChildAt(itemIndex);
+			itemView.setVisibility(View.VISIBLE);
+	
             mDragView.setVisibility(GONE);
             WindowManager wm = (WindowManager)getContext().getSystemService(Context.WINDOW_SERVICE);
             wm.removeView(mDragView);
@@ -170,26 +186,4 @@ public class DragNDropListView extends ListView {
             mDragView = null;
         }
 	}
-
-//	private GestureDetector createFlingDetector() {
-//		return new GestureDetector(getContext(), new SimpleOnGestureListener() {
-//            @Override
-//            public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX,
-//                    float velocityY) {         	
-//                if (mDragView != null) {              	
-//                	int deltaX = (int)Math.abs(e1.getX()-e2.getX());
-//                	int deltaY = (int)Math.abs(e1.getY() - e2.getY());
-//               
-//                	if (deltaX > mDragView.getWidth()/2 && deltaY < mDragView.getHeight()) {
-//                		mRemoveListener.onRemove(mStartPosition);
-//                	}
-//                	
-//                	stopDrag(mStartPosition - getFirstVisiblePosition());
-//
-//                    return true;
-//                }
-//                return false;
-//            }
-//        });
-//	}
 }

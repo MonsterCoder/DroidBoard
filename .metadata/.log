@@ -3875,3 +3875,12 @@ com.android.ddmlib.ShellCommandUnresponsiveException
 	at com.android.ddmlib.MonitorThread.callHandler(MonitorThread.java:414)
 	at com.android.ddmlib.MonitorThread.processClientActivity(MonitorThread.java:322)
 	at com.android.ddmlib.MonitorThread.run(MonitorThread.java:263)
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-04-25 12:59:51.316
+!MESSAGE AndroidManifest: Ignoring unknown 'co' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-04-25 12:59:51.748
+!MESSAGE AndroidManifest: Ignoring unknown 'colo' XML element
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2011-04-25 12:59:52.605
+!MESSAGE AndroidManifest: Ignoring unknown 'colo' XML element
