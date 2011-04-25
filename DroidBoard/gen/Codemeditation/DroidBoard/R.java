@@ -33,23 +33,29 @@ public final class R {
         public static final int woodtag=0x7f02000d;
     }
     public static final class id {
-        public static final int app_description=0x7f070006;
-        public static final int app_lable=0x7f070005;
+        public static final int LinearLayout01=0x7f070004;
+        public static final int app_description=0x7f070007;
+        public static final int app_lable=0x7f070006;
         public static final int description=0x7f070003;
-        public static final int icon=0x7f070004;
+        public static final int icon=0x7f070005;
         public static final int name=0x7f070002;
         public static final int phase_name=0x7f070000;
-        public static final int projectlist_title=0x7f070007;
+        public static final int project_header=0x7f070008;
+        public static final int projectlist_title=0x7f070009;
         public static final int story_list=0x7f070001;
-        public static final int text=0x7f070009;
-        public static final int title=0x7f070008;
+        public static final int text=0x7f07000b;
+        public static final int title=0x7f07000a;
     }
     public static final class layout {
         public static final int phase_page_view=0x7f030000;
-        public static final int phases_list_view=0x7f030001;
-        public static final int project_item=0x7f030002;
-        public static final int projects_list_view=0x7f030003;
-        public static final int story_item=0x7f030004;
+        public static final int phase_view=0x7f030001;
+        public static final int phases_list_view=0x7f030002;
+        public static final int project_item=0x7f030003;
+        public static final int project_phases_tab=0x7f030004;
+        public static final int project_view=0x7f030005;
+        public static final int projectlistview=0x7f030006;
+        public static final int projects_list_view=0x7f030007;
+        public static final int story_item=0x7f030008;
     }
     public static final class string {
         public static final int app_description=0x7f050003;

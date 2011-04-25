@@ -5,6 +5,7 @@ import java.util.List;
 import roboguice.activity.RoboTabActivity;
 import Codemeditation.AgilezenApi.IKanbanApi;
 import Codemeditation.Domain.Phase;
+import android.R.color;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -33,14 +34,12 @@ public class ProjectPhasesTabActivity extends RoboTabActivity {
 		projectName = bundle.getString("PROJECT_NAME");
 		TabHost host = getTabHost();
 		Intent phaseintent = new Intent(ProjectPhasesTabActivity.this, PhaseActivity.class);
-				
-		TextView indicator = new TextView(ProjectPhasesTabActivity.this);
-		indicator.setText("Project");
-		indicator.setHeight(23);
-		indicator.setWidth(50);
+	    TextView indicator = new TextView(this);
+	    indicator.setText("Indicator");
+		host.addTab(host.newTabSpec("projectName").setIndicator(projectName).setContent(phaseintent));
+
+	
 		
-		host.addTab(host.newTabSpec("Project").setIndicator(indicator).setContent(phaseintent));
-			
 		handler = new Handler();
 		
 		runnable = new Runnable() {
@@ -48,14 +47,17 @@ public class ProjectPhasesTabActivity extends RoboTabActivity {
 			@Override
 			public void run() {
 				TabHost host = getTabHost();
+				
+				host.setup();
+				
 				Intent phaseintent = new Intent(ProjectPhasesTabActivity.this, PhaseActivity.class);
 				
 				TextView indicator = new TextView(ProjectPhasesTabActivity.this);
-				indicator.setText("Phase 1");
-				indicator.setHeight(23);
-				indicator.setWidth(50);
-				host.addTab(host.newTabSpec("tab1").setIndicator(indicator).setContent(phaseintent));
-				host.addTab(host.newTabSpec("tab2").setIndicator("tab 2").setContent(phaseintent));
+		
+				host.addTab(host.newTabSpec("tab1").setIndicator("Project").setContent(phaseintent));
+				host.addTab(host.newTabSpec("tab2").setIndicator("Phrase").setContent(phaseintent));
+				host.addTab(host.newTabSpec("tab2").setIndicator("Phrase").setContent(phaseintent));
+				host.addTab(host.newTabSpec("tab2").setIndicator("Phrase").setContent(phaseintent));
 				
 			}
 			
