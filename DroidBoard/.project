@@ -32,6 +32,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>DragNDrop</name>
+			<type>2</type>
+			<location>/home/georgec/workplace/DroidBoard/DragNDrop/src/com/ericharlow/DragNDrop</location>
+		</link>
+		<link>
 			<name>horizontalpager</name>
 			<type>2</type>
 			<location>/home/georgec/workplace/DroidBoard/horizontalpager</location>

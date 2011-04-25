@@ -23,7 +23,7 @@
 	  	android:layout_marginRight = "5dip"
 	  	style="@style/Text.PhaseHeader"
 	  	/>
-	   <ListView
+	   <com.ericharlow.DragNDrop.DragNDropListView
 		    android:id="@+id/story_list"
 		    android:layout_width="fill_parent" 
 		    android:layout_height="wrap_content"   

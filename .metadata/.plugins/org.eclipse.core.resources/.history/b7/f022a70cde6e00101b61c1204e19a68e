@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!-- 	<ImageView -->
+<!--			    android:id ="@+id/icon"-->
+<!--			    android:src ="@drawable/woodboard"-->
+<!--			    android:layout_width="fill_parent" -->
+<!--		    	android:layout_height="fill_parent"-->
+<!--		    	android:scaleType="fitXY"	    	-->
+<!--		    	/>-->
+	
+	<LinearLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:layout_width="fill_parent"
+	  android:layout_height="fill_parent"
+	  android:orientation="vertical"
+	  android:padding="5dip"
+	  >
+	  <TextView 
+	  	android:id="@+id/phase_name"
+	  	android:singleLine = "true"
+	  	android:textSize="16sp"
+	  	android:layout_marginLeft = "5dip"
+	  	android:layout_marginRight = "5dip"
+	  	style="@style/Text.PhaseHeader"
+	  	/>
+	   <ListView
+		    android:id="@+id/story_list"
+		    android:layout_width="fill_parent" 
+		    android:layout_height="wrap_content"   
+		    android:layout_margin = "5dip"
+		/>
+	</LinearLayout>
+<!--</FrameLayout>-->

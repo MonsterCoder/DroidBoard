@@ -10,7 +10,6 @@ import Codemeditation.Domain.Story;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -18,9 +17,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
+import com.ericharlow.DragNDrop.DragNDropListView;
 import com.github.ysamlan.horizontalpager.HorizontalPager;
 import com.google.inject.Inject;
 
@@ -169,7 +168,8 @@ public class PhasesListActivity extends RoboActivity {
 			if (dialog != null) dialog.dismiss();
 			View view = storyListViews.get(screen);
 			
-			ListView list = (ListView)view.findViewById(R.id.story_list);
+			DragNDropListView list = (DragNDropListView)view.findViewById(R.id.story_list);
+			list.setContext(PhasesListActivity.this);
 			StoryAdapter adapter = new StoryAdapter(stories.get(screen).toArray(new Story[0]));
 			list.setAdapter(adapter);
 
