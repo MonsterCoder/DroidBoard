@@ -1,0 +1,5 @@
+package com.ericharlow.DragNDrop;
+
+public class DragDropManager {
+
+}
