@@ -28,11 +28,9 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class DragNDropListView extends ListView {
-
-	/// boolean mDragMode;
-
 	int mStartPosition;
 	int mEndPosition;
 	int mDragPointOffset;		//Used to adjust drag view location
@@ -48,10 +46,23 @@ public class DragNDropListView extends ListView {
 
 	private DragDropManager _dragdropManager;
 
-	public DragNDropListView(Context context, AttributeSet attrs) {
+	public DragNDropListView(final Context context, AttributeSet attrs) {
 		super(context, attrs);
 		_dragdropManager = ((DroidBoardApplication)context.getApplicationContext()).GetDragDropManager();
+//		setLongClickable(true);
+		
+		
+//		this.setOnLongClickListener(new OnLongClickListener(){
+//
+//			@Override
+//			public boolean onLongClick(View v) {
+//				Toast.makeText(context, "Listview long click", Toast.LENGTH_SHORT).show();
+//				return false;
+//			}
+//			
+//		});
 	}
+	
 	
 	public void setDropListener(DropListener l) {
 		mDropListener = l;
@@ -74,22 +85,27 @@ public class DragNDropListView extends ListView {
 		final int action = ev.getAction();
 		final int x = (int) ev.getX();
 		final int y = (int) ev.getY();	
-		if (action == MotionEvent.ACTION_DOWN && x < this.getWidth()/4)
-		_dragdropManager.SetDragMode(true);
-	
+//		if (action == MotionEvent.ACTION_DOWN && x < this.getWidth()/4)
+//		_dragdropManager.SetDragMode(true);
+///		Toast.makeText(context, "Listview tought enter", Toast.LENGTH_SHORT).show();
+		
 		if (!_dragdropManager.GetDragMode()) 
 			return super.onTouchEvent(ev);
-
+		
+		if (mDragView == null) {
+			mStartPosition = pointToPosition(x,y);
+			if (mStartPosition != INVALID_POSITION) {
+				int mItemPosition = mStartPosition - getFirstVisiblePosition();
+	            mDragPointOffset = y - getChildAt(mItemPosition).getTop();
+	            mDragPointOffset -= ((int)ev.getRawY()) - y;
+				startDrag(mItemPosition,y);
+				drag(0,y);// replace 0 with x if desired
+			}	
+		}
+		
 		switch (action) {
 			case MotionEvent.ACTION_DOWN:
-				mStartPosition = pointToPosition(x,y);
-				if (mStartPosition != INVALID_POSITION) {
-					int mItemPosition = mStartPosition - getFirstVisiblePosition();
-                    mDragPointOffset = y - getChildAt(mItemPosition).getTop();
-                    mDragPointOffset -= ((int)ev.getRawY()) - y;
-					startDrag(mItemPosition,y);
-					drag(0,y);// replace 0 with x if desired
-				}	
+	
 				break;
 			case MotionEvent.ACTION_MOVE:
 				drag(0,y);// replace 0 with x if desired
@@ -106,6 +122,7 @@ public class DragNDropListView extends ListView {
 				}
 				break;
 		}
+    	/// Toast.makeText(context, "Listview tought return", Toast.LENGTH_SHORT).show();
 		return true;
 	}	
 	

@@ -1,0 +1,7 @@
+package Codemeditation.DroidBoard.Api;
+
+public interface IKanbanApi {
+
+	int GetProjectsCount();
+
+}

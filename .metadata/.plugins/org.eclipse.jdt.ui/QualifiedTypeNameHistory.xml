@@ -24,4 +24,6 @@
 <fullyQualifiedTypeName name="android.graphics.Color"/>
 <fullyQualifiedTypeName name="Codemeditation.DroidBoard.R.id"/>
 <fullyQualifiedTypeName name="Codemeditation.DroidBoard.R.drawable"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.view.View.OnLongClickListener"/>
 </qualifiedTypeNameHistroy>

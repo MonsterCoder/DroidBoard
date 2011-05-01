@@ -16,9 +16,12 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnLongClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.ericharlow.DragNDrop.DragDropManager;
 import com.ericharlow.DragNDrop.DragNDropListView;
 import com.ericharlow.DragNDrop.DropListener;
 import com.ericharlow.DragNDrop.RemoveListener;
@@ -34,11 +37,15 @@ public class PhasesListActivity extends RoboActivity {
 	private Runnable runnable;
 	private List<View> storyListViews;
 	private List<List<Story>> stories;
+	private OnLongClickListener longClickListener;
+	private DragDropManager _dragdropManager;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.phases_list_view);
+		
+		_dragdropManager = ((DroidBoardApplication)getApplicationContext()).GetDragDropManager();
 		
 		Intent intent = getIntent();
 		Bundle bundle = intent.getExtras();
@@ -98,6 +105,16 @@ public class PhasesListActivity extends RoboActivity {
 		};
 		
 		new LoadPhasesTask().execute(null);	
+		
+		longClickListener = new OnLongClickListener() {
+
+			@Override
+			public boolean onLongClick(View v) {
+				_dragdropManager.SetDragMode(true);	
+				return false;
+			}
+			
+		};
 	}
 
 	
@@ -111,7 +128,7 @@ public class PhasesListActivity extends RoboActivity {
 		}
 
 		@Override
-		public View getView(int position, View convertView, ViewGroup parent) {
+		public View getView(final int position, View convertView, ViewGroup parent) {
 			LayoutInflater inflater = getLayoutInflater();
 			View item_row = inflater.inflate(R.layout.story_item, parent, false);
 			
@@ -120,6 +137,7 @@ public class PhasesListActivity extends RoboActivity {
 		
 			TextView text = (TextView)item_row.findViewById(R.id.text);
 			text.setText(stories.get(position).text );
+    		item_row.setOnLongClickListener(longClickListener);
 			return item_row;
 		}
 
@@ -190,7 +208,7 @@ public class PhasesListActivity extends RoboActivity {
 				adapter = new StoryAdapter(stories.get(screen));
 				list.setAdapter(adapter);
 				list.setDropListener(adapter);
-				list.setRemoveListener(adapter);
+				list.setRemoveListener(adapter);			
 			} else {
 				list.invalidate();
 			}
