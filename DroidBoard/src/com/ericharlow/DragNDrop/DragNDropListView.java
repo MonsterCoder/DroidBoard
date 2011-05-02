@@ -17,8 +17,10 @@
 package com.ericharlow.DragNDrop;
 
 import Codemeditation.DroidBoard.DroidBoardApplication;
+import Codemeditation.DroidBoard.PhasesListActivity;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.Color;
 import android.graphics.PixelFormat;
 import android.util.AttributeSet;
 import android.view.GestureDetector;
@@ -26,9 +28,11 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
+import android.widget.AdapterView.OnItemLongClickListener;
 
 public class DragNDropListView extends ListView {
 	int mStartPosition;
@@ -49,18 +53,16 @@ public class DragNDropListView extends ListView {
 	public DragNDropListView(final Context context, AttributeSet attrs) {
 		super(context, attrs);
 		_dragdropManager = ((DroidBoardApplication)context.getApplicationContext()).GetDragDropManager();
-//		setLongClickable(true);
 		
-		
-//		this.setOnLongClickListener(new OnLongClickListener(){
-//
-//			@Override
-//			public boolean onLongClick(View v) {
-//				Toast.makeText(context, "Listview long click", Toast.LENGTH_SHORT).show();
-//				return false;
-//			}
-//			
-//		});
+		setOnItemLongClickListener(new OnItemLongClickListener() {
+
+			@Override
+			public boolean onItemLongClick(AdapterView<?> arg0,
+					View view, int arg2, long arg3) {
+				_dragdropManager.SetDragMode(true);	
+				return false;
+			}			
+		});
 	}
 	
 	
@@ -80,15 +82,13 @@ public class DragNDropListView extends ListView {
 	 this.context = context;
 	}
 
+
 	@Override
 	public boolean onTouchEvent(MotionEvent ev) {
 		final int action = ev.getAction();
 		final int x = (int) ev.getX();
 		final int y = (int) ev.getY();	
-//		if (action == MotionEvent.ACTION_DOWN && x < this.getWidth()/4)
-//		_dragdropManager.SetDragMode(true);
-///		Toast.makeText(context, "Listview tought enter", Toast.LENGTH_SHORT).show();
-		
+
 		if (!_dragdropManager.GetDragMode()) 
 			return super.onTouchEvent(ev);
 		
@@ -105,13 +105,17 @@ public class DragNDropListView extends ListView {
 		
 		switch (action) {
 			case MotionEvent.ACTION_DOWN:
-	
+				/// Toast.makeText(context, "Listview action down", Toast.LENGTH_SHORT).show();
 				break;
+			
 			case MotionEvent.ACTION_MOVE:
+				/// Toast.makeText(context, "Listview action move", Toast.LENGTH_SHORT).show();
 				drag(0,y);// replace 0 with x if desired
 				break;
 			case MotionEvent.ACTION_CANCEL:
+				/// Toast.makeText(context, "Listview action cancle", Toast.LENGTH_SHORT).show();
 			case MotionEvent.ACTION_UP:
+				/// Toast.makeText(context, "Listview action up", Toast.LENGTH_SHORT).show();
 			default:
 				_dragdropManager.SetDragMode(false);
 				mEndPosition = pointToPosition(x,y);
@@ -149,6 +153,7 @@ public class DragNDropListView extends ListView {
 
 		View item = getChildAt(itemIndex);
 		if (item == null) return;
+		
 		item.setDrawingCacheEnabled(true);
 	
 		if (mDragListener != null) {

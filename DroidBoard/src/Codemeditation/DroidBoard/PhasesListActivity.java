@@ -10,6 +10,7 @@ import Codemeditation.Domain.Story;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
@@ -17,9 +18,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnLongClickListener;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.AdapterView.OnItemLongClickListener;
 
 import com.ericharlow.DragNDrop.DragDropManager;
 import com.ericharlow.DragNDrop.DragNDropListView;
@@ -37,7 +40,7 @@ public class PhasesListActivity extends RoboActivity {
 	private Runnable runnable;
 	private List<View> storyListViews;
 	private List<List<Story>> stories;
-	private OnLongClickListener longClickListener;
+
 	private DragDropManager _dragdropManager;
 	
 	@Override
@@ -72,7 +75,7 @@ public class PhasesListActivity extends RoboActivity {
         final HorizontalPager realViewSwitcher = new HorizontalPager(getApplicationContext());
 
         realViewSwitcher.setOnScreenSwitchListener(onScreenSwitchListener);
-        
+
 		handler = new Handler();
 		
 		runnable = new Runnable() {
@@ -88,33 +91,36 @@ public class PhasesListActivity extends RoboActivity {
 										    	   Context context = getApplicationContext();
 										    	   LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 										    	   View view =  inflater.inflate(R.layout.phase_page_view, null);
+										    	   
 										    	   TextView title =  (TextView)view.findViewById(R.id.phase_name);
 										    	   
 										    	   Phase phase = phases.get(i);
 										    	   String text = phase.limit > 0 ? String.format("%s(%d)",phase.name, phase.limit) : String.format("%s",phase.name);
 										    	   title.setText(text);
 										    	   
+										    	   
 										    	   realViewSwitcher.addView(view);
 										    	   
 										    	   storyListViews.add(i, view);
 										           stories.add(i, null);									       
 										        }
-										       
+										  
 										       new	LoadStoriesTask(0).execute(null);
 										}	
 		};
 		
 		new LoadPhasesTask().execute(null);	
 		
-		longClickListener = new OnLongClickListener() {
-
-			@Override
-			public boolean onLongClick(View v) {
-				_dragdropManager.SetDragMode(true);	
-				return false;
-			}
-			
-		};
+//		longClickListener = new OnLongClickListener() {
+//
+//			@Override
+//			public boolean onLongClick(View v) {
+//				_dragdropManager.SetDragMode(true);	
+//				Toast.makeText(PhasesListActivity.this, "long click", Toast.LENGTH_SHORT).show();
+//				return false;
+//			}
+//			
+//		};
 	}
 
 	
@@ -137,7 +143,7 @@ public class PhasesListActivity extends RoboActivity {
 		
 			TextView text = (TextView)item_row.findViewById(R.id.text);
 			text.setText(stories.get(position).text );
-    		item_row.setOnLongClickListener(longClickListener);
+    		/// item_row.setOnLongClickListener(longClickListener);
 			return item_row;
 		}
 
@@ -208,7 +214,9 @@ public class PhasesListActivity extends RoboActivity {
 				adapter = new StoryAdapter(stories.get(screen));
 				list.setAdapter(adapter);
 				list.setDropListener(adapter);
-				list.setRemoveListener(adapter);			
+				list.setRemoveListener(adapter);	
+
+				
 			} else {
 				list.invalidate();
 			}

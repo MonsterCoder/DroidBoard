@@ -13,9 +13,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.View.OnLongClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.inject.Inject;
 
@@ -76,7 +78,7 @@ public class ProjectlistActivity extends RoboListActivity {
 
     		Project[] projects = result.toArray(new Project[0]);
     		ProjectAdapter adapter = new ProjectAdapter(projects);
-    		
+
     		ProjectlistActivity.this.setListAdapter(adapter);
     		projectlist_title_view.setText(String.format("Active Projects: %s", result.size()));
     	}
