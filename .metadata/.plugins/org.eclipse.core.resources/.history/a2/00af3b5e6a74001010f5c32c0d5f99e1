@@ -30,7 +30,6 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class DragNDropListView extends ListView {
 	int mStartPosition;
@@ -96,28 +95,21 @@ public class DragNDropListView extends ListView {
 				int mItemPosition = mStartPosition - getFirstVisiblePosition();
 	            mDragPointOffset = y - getChildAt(mItemPosition).getTop();
 	            mDragPointOffset -= ((int)ev.getRawY()) - y;
-				startDrag(mItemPosition,x, y);
-//				drag(0,y);
+				startDrag(mItemPosition,y);
+				drag(0,y);
 			}	
 		}
 		
 		switch (action) {
 			case MotionEvent.ACTION_DOWN:
-				Toast.makeText(getContext(), "view down", Toast.LENGTH_SHORT).show();
 				break;
 			
 			case MotionEvent.ACTION_MOVE:
-//				Log.i ("ACTION_MOVE", String.format("y %d, bottom %d", y, this.getBottom())); 
-//				if (y > this.getBottom() - 80 ) {
-//					this.setSelection(this.getBottom() + 10);
-//				}
-				drag(x,y);// replace 0 with x if desired
-				Toast.makeText(getContext(), "view move", Toast.LENGTH_SHORT).show();
+				Log.i ("ACTION_MOVE", String.format("y %d, bottom %d", y, this.getBottom()); 
+				drag(0,y);// replace 0 with x if desired
 				break;
 			case MotionEvent.ACTION_CANCEL:	
-				Toast.makeText(getContext(), "view cancel", Toast.LENGTH_SHORT).show();
 			case MotionEvent.ACTION_UP:
-				Toast.makeText(getContext(), "view up", Toast.LENGTH_SHORT).show();
 			default:
 				_dragdropManager.SetDragMode(false);
 				mEndPosition = pointToPosition(x,y);
@@ -150,7 +142,7 @@ public class DragNDropListView extends ListView {
 	}
 
 	// enable the drag view for dragging
-	private void startDrag(int itemIndex,int x, int y) {
+	private void startDrag(int itemIndex, int y) {
 		stopDrag(itemIndex);
 
 		View item = getChildAt(itemIndex);
@@ -172,7 +164,7 @@ public class DragNDropListView extends ListView {
 		
         WindowManager.LayoutParams mWindowParams = new WindowManager.LayoutParams();
         mWindowParams.gravity = Gravity.TOP;
-        mWindowParams.x = x;
+        mWindowParams.x = 0;
         mWindowParams.y = y - mDragPointOffset;
 
         mWindowParams.height = WindowManager.LayoutParams.WRAP_CONTENT;

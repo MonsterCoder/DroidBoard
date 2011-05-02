@@ -129,7 +129,7 @@ public class DragNDropListView extends ListView {
 				break;
 		}
 
-		return true;
+		return false;
 	}	
 	
 	// move the drag view

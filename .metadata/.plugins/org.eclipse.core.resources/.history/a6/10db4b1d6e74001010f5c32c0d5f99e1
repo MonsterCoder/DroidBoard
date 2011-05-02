@@ -308,7 +308,7 @@ public final class HorizontalPager extends ViewGroup {
                 } else {
                     mTouchState = TOUCH_STATE_HORIZONTAL_SCROLLING;
                 }
-                Toast.makeText(getContext(), "page down", Toast.LENGTH_SHORT).show();
+
                 break;
             case MotionEvent.ACTION_MOVE:
                 final int xDiff = (int) Math.abs(x - mLastMotionX);
@@ -338,7 +338,7 @@ public final class HorizontalPager extends ViewGroup {
                         }
                     }
                 }
-                Toast.makeText(getContext(), "page move", Toast.LENGTH_SHORT).show();
+
                 break;
 
             case MotionEvent.ACTION_UP:
@@ -366,17 +366,16 @@ public final class HorizontalPager extends ViewGroup {
                 }
 
                 mTouchState = TOUCH_STATE_REST;
-                Toast.makeText(getContext(), "page up", Toast.LENGTH_SHORT).show();
+
                 break;
             case MotionEvent.ACTION_CANCEL:
                 mTouchState = TOUCH_STATE_REST;
-                Toast.makeText(getContext(), "page cancel", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
         }
         
-       
+        Toast.makeText(getContext(), "page touch", Toast.LENGTH_SHORT).show();
         return true;
     }
 

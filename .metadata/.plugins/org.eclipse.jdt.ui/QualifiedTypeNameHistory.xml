@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="Codemeditation.AgilezenApi.AgilezenApi"/>
 <fullyQualifiedTypeName name="org.apache.http.client.HttpClient"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-<fullyQualifiedTypeName name="android.util.Log"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.Type"/>
@@ -21,9 +20,13 @@
 <fullyQualifiedTypeName name="android.R.id"/>
 <fullyQualifiedTypeName name="Codemeditation.DroidBoard.R"/>
 <fullyQualifiedTypeName name="Codemeditation.DroidBoard.R.layout"/>
-<fullyQualifiedTypeName name="android.graphics.Color"/>
 <fullyQualifiedTypeName name="Codemeditation.DroidBoard.R.id"/>
 <fullyQualifiedTypeName name="Codemeditation.DroidBoard.R.drawable"/>
 <fullyQualifiedTypeName name="android.widget.Toast"/>
 <fullyQualifiedTypeName name="android.view.View.OnLongClickListener"/>
+<fullyQualifiedTypeName name="android.view.MotionEvent"/>
+<fullyQualifiedTypeName name="Codemeditation.DroidBoard.ProjectlistActivity"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemLongClickListener"/>
+<fullyQualifiedTypeName name="android.graphics.Color"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
 </qualifiedTypeNameHistroy>

@@ -30,7 +30,6 @@ import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class DragNDropListView extends ListView {
 	int mStartPosition;
@@ -103,7 +102,6 @@ public class DragNDropListView extends ListView {
 		
 		switch (action) {
 			case MotionEvent.ACTION_DOWN:
-				Toast.makeText(getContext(), "view down", Toast.LENGTH_SHORT).show();
 				break;
 			
 			case MotionEvent.ACTION_MOVE:
@@ -112,12 +110,9 @@ public class DragNDropListView extends ListView {
 //					this.setSelection(this.getBottom() + 10);
 //				}
 				drag(x,y);// replace 0 with x if desired
-				Toast.makeText(getContext(), "view move", Toast.LENGTH_SHORT).show();
 				break;
 			case MotionEvent.ACTION_CANCEL:	
-				Toast.makeText(getContext(), "view cancel", Toast.LENGTH_SHORT).show();
 			case MotionEvent.ACTION_UP:
-				Toast.makeText(getContext(), "view up", Toast.LENGTH_SHORT).show();
 			default:
 				_dragdropManager.SetDragMode(false);
 				mEndPosition = pointToPosition(x,y);
@@ -129,7 +124,7 @@ public class DragNDropListView extends ListView {
 				break;
 		}
 
-		return true;
+		return false;
 	}	
 	
 	// move the drag view

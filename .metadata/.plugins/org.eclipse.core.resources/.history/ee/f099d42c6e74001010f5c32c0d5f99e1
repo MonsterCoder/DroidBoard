@@ -366,11 +366,10 @@ public final class HorizontalPager extends ViewGroup {
                 }
 
                 mTouchState = TOUCH_STATE_REST;
-                Toast.makeText(getContext(), "page up", Toast.LENGTH_SHORT).show();
+
                 break;
             case MotionEvent.ACTION_CANCEL:
                 mTouchState = TOUCH_STATE_REST;
-                Toast.makeText(getContext(), "page cancel", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
