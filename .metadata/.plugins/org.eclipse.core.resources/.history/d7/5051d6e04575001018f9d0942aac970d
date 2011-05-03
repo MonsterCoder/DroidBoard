@@ -59,7 +59,6 @@ public class DragNDropListView extends ListView {
 			public boolean onItemLongClick(AdapterView<?> arg0,
 					View view, int arg2, long arg3) {
 				_dragdropManager.SetDragMode(true);	
-				Toast.makeText(getContext(), "long click", Toast.LENGTH_SHORT).show();
 				return false;
 			}			
 		});
@@ -88,8 +87,7 @@ public class DragNDropListView extends ListView {
 		final int action = ev.getAction();
 		final int x = (int) ev.getX();
 		final int y = (int) ev.getY();	
-		/// Toast.makeText(getContext(), "view tough event", Toast.LENGTH_SHORT).show();
-		
+
 		if (_dragdropManager.GetDragMode()) {
 			
 		
@@ -112,7 +110,6 @@ public class DragNDropListView extends ListView {
 				
 				case MotionEvent.ACTION_MOVE:
 					drag(x,y);// replace 0 with x if desired
-					// super.onTouchEvent(ev);
 					break;
 				case MotionEvent.ACTION_CANCEL:	
 					Toast.makeText(getContext(), "view cancel", Toast.LENGTH_SHORT).show();
@@ -129,7 +126,7 @@ public class DragNDropListView extends ListView {
 					break;
 			}
 		} else {
-			return super.onTouchEvent(ev);
+			super.onTouchEvent(ev);
 		}
 		
 		return false;

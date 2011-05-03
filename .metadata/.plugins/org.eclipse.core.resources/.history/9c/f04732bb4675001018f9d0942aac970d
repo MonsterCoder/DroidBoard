@@ -112,7 +112,6 @@ public class DragNDropListView extends ListView {
 				
 				case MotionEvent.ACTION_MOVE:
 					drag(x,y);// replace 0 with x if desired
-					// super.onTouchEvent(ev);
 					break;
 				case MotionEvent.ACTION_CANCEL:	
 					Toast.makeText(getContext(), "view cancel", Toast.LENGTH_SHORT).show();
@@ -129,7 +128,7 @@ public class DragNDropListView extends ListView {
 					break;
 			}
 		} else {
-			return super.onTouchEvent(ev);
+			super.onTouchEvent(ev);
 		}
 		
 		return false;

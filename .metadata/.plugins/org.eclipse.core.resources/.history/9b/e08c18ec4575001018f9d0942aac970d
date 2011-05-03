@@ -88,8 +88,7 @@ public class DragNDropListView extends ListView {
 		final int action = ev.getAction();
 		final int x = (int) ev.getX();
 		final int y = (int) ev.getY();	
-		/// Toast.makeText(getContext(), "view tough event", Toast.LENGTH_SHORT).show();
-		
+
 		if (_dragdropManager.GetDragMode()) {
 			
 		
@@ -112,7 +111,6 @@ public class DragNDropListView extends ListView {
 				
 				case MotionEvent.ACTION_MOVE:
 					drag(x,y);// replace 0 with x if desired
-					// super.onTouchEvent(ev);
 					break;
 				case MotionEvent.ACTION_CANCEL:	
 					Toast.makeText(getContext(), "view cancel", Toast.LENGTH_SHORT).show();

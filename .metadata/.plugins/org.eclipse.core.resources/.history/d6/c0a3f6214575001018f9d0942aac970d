@@ -59,7 +59,6 @@ public class DragNDropListView extends ListView {
 			public boolean onItemLongClick(AdapterView<?> arg0,
 					View view, int arg2, long arg3) {
 				_dragdropManager.SetDragMode(true);	
-				Toast.makeText(getContext(), "long click", Toast.LENGTH_SHORT).show();
 				return false;
 			}			
 		});
@@ -88,51 +87,46 @@ public class DragNDropListView extends ListView {
 		final int action = ev.getAction();
 		final int x = (int) ev.getX();
 		final int y = (int) ev.getY();	
-		/// Toast.makeText(getContext(), "view tough event", Toast.LENGTH_SHORT).show();
-		
-		if (_dragdropManager.GetDragMode()) {
-			
-		
-			if (mDragView == null) {
-				mStartPosition = pointToPosition(x,y);
-				if (mStartPosition != INVALID_POSITION) {
-					int mItemPosition = mStartPosition - getFirstVisiblePosition();
-		            mDragPointOffset_y = y - getChildAt(mItemPosition).getTop();
-		            mDragPointOffset_y -= ((int)ev.getRawY()) - y;
-		            mDragPointOffset_x = x;
-					startDrag(mItemPosition,x, y);
-	//				drag(0,y);
-				}	
-			}
-			
-			switch (action) {
-				case MotionEvent.ACTION_DOWN:
-					Toast.makeText(getContext(), "view down", Toast.LENGTH_SHORT).show();
-					break;
-				
-				case MotionEvent.ACTION_MOVE:
-					drag(x,y);// replace 0 with x if desired
-					// super.onTouchEvent(ev);
-					break;
-				case MotionEvent.ACTION_CANCEL:	
-					Toast.makeText(getContext(), "view cancel", Toast.LENGTH_SHORT).show();
-				case MotionEvent.ACTION_UP:
-					Toast.makeText(getContext(), "view up", Toast.LENGTH_SHORT).show();
-				default:
-					_dragdropManager.SetDragMode(false);
-					mEndPosition = pointToPosition(x,y);
-					stopDrag(mStartPosition - getFirstVisiblePosition());
-					if (mDropListener != null && mStartPosition != INVALID_POSITION && mEndPosition != INVALID_POSITION) {
-		        		 mDropListener.onDrop(mStartPosition, mEndPosition);
-		        		 this.invalidateViews();
-					}
-					break;
-			}
-		} else {
+
+		if (!_dragdropManager.GetDragMode()) 
 			return super.onTouchEvent(ev);
+		
+		if (mDragView == null) {
+			mStartPosition = pointToPosition(x,y);
+			if (mStartPosition != INVALID_POSITION) {
+				int mItemPosition = mStartPosition - getFirstVisiblePosition();
+	            mDragPointOffset_y = y - getChildAt(mItemPosition).getTop();
+	            mDragPointOffset_y -= ((int)ev.getRawY()) - y;
+	            mDragPointOffset_x = x;
+				startDrag(mItemPosition,x, y);
+//				drag(0,y);
+			}	
 		}
 		
-		return false;
+		switch (action) {
+			case MotionEvent.ACTION_DOWN:
+				Toast.makeText(getContext(), "view down", Toast.LENGTH_SHORT).show();
+				break;
+			
+			case MotionEvent.ACTION_MOVE:
+				drag(x,y);// replace 0 with x if desired
+				break;
+			case MotionEvent.ACTION_CANCEL:	
+				Toast.makeText(getContext(), "view cancel", Toast.LENGTH_SHORT).show();
+			case MotionEvent.ACTION_UP:
+				Toast.makeText(getContext(), "view up", Toast.LENGTH_SHORT).show();
+			default:
+				_dragdropManager.SetDragMode(false);
+				mEndPosition = pointToPosition(x,y);
+				stopDrag(mStartPosition - getFirstVisiblePosition());
+				if (mDropListener != null && mStartPosition != INVALID_POSITION && mEndPosition != INVALID_POSITION) {
+	        		 mDropListener.onDrop(mStartPosition, mEndPosition);
+	        		 this.invalidateViews();
+				}
+				break;
+		}
+
+		return true;
 	}	
 	
 	// move the drag view
