@@ -35,8 +35,8 @@ import android.widget.Toast;
 public class DragNDropListView extends ListView {
 	int mStartPosition;
 	int mEndPosition;
-	int mDragPointOffset;		//Used to adjust drag view location
-	
+	int mDragPointOffset_y;		//Used to adjust drag view location
+    int mDragPointOffset_x;
 	ImageView mDragView;
 	GestureDetector mGestureDetector;
 	
@@ -47,6 +47,7 @@ public class DragNDropListView extends ListView {
 	private Context context;
 
 	private DragDropManager _dragdropManager;
+
 
 	public DragNDropListView(final Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -94,8 +95,9 @@ public class DragNDropListView extends ListView {
 			mStartPosition = pointToPosition(x,y);
 			if (mStartPosition != INVALID_POSITION) {
 				int mItemPosition = mStartPosition - getFirstVisiblePosition();
-	            mDragPointOffset = y - getChildAt(mItemPosition).getTop();
-	            mDragPointOffset -= ((int)ev.getRawY()) - y;
+	            mDragPointOffset_y = y - getChildAt(mItemPosition).getTop();
+	            mDragPointOffset_y -= ((int)ev.getRawY()) - y;
+	            mDragPointOffset_x = x;
 				startDrag(mItemPosition,x, y);
 //				drag(0,y);
 			}	
@@ -107,12 +109,7 @@ public class DragNDropListView extends ListView {
 				break;
 			
 			case MotionEvent.ACTION_MOVE:
-//				Log.i ("ACTION_MOVE", String.format("y %d, bottom %d", y, this.getBottom())); 
-//				if (y > this.getBottom() - 80 ) {
-//					this.setSelection(this.getBottom() + 10);
-//				}
 				drag(x,y);// replace 0 with x if desired
-				Toast.makeText(getContext(), "view move", Toast.LENGTH_SHORT).show();
 				break;
 			case MotionEvent.ACTION_CANCEL:	
 				Toast.makeText(getContext(), "view cancel", Toast.LENGTH_SHORT).show();
@@ -136,8 +133,8 @@ public class DragNDropListView extends ListView {
 	private void drag(int x, int y) {
 		if (mDragView != null) {
 			WindowManager.LayoutParams layoutParams = (WindowManager.LayoutParams) mDragView.getLayoutParams();
-			layoutParams.x = x;
-			layoutParams.y = y - mDragPointOffset;
+			layoutParams.x = x - mDragPointOffset_x;
+			layoutParams.y = y - mDragPointOffset_y;
 			WindowManager mWindowManager = (WindowManager) getContext()
 					.getSystemService(Context.WINDOW_SERVICE);
 			mWindowManager.updateViewLayout(mDragView, layoutParams);
@@ -172,8 +169,8 @@ public class DragNDropListView extends ListView {
 		
         WindowManager.LayoutParams mWindowParams = new WindowManager.LayoutParams();
         mWindowParams.gravity = Gravity.TOP;
-        mWindowParams.x = x;
-        mWindowParams.y = y - mDragPointOffset;
+        mWindowParams.x = 0;
+        mWindowParams.y = y - mDragPointOffset_y;
 
         mWindowParams.height = WindowManager.LayoutParams.WRAP_CONTENT;
         mWindowParams.width = WindowManager.LayoutParams.WRAP_CONTENT;
