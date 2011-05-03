@@ -1,0 +1,41 @@
+package com.ericharlow.DragNDrop;
+
+import android.content.Context;
+import android.view.View;
+import android.view.WindowManager;
+
+public class DragDropManager {
+	private boolean _isDragging;
+	private int mDragPointOffset_x;
+	private int mDragPointOffset_y;
+	private View mDragView;
+	private WindowManager mWindowManager;
+
+	public DragDropManager(WindowManager mWindowManager) {
+		this.mWindowManager = mWindowManager;
+	}
+	
+	public boolean GetDragMode() {
+		return _isDragging;
+	}
+
+	public void SetDragMode(boolean isDragging) {
+		_isDragging = isDragging;
+		
+	}
+	// move the drag view
+	public void drag(int x, int y) {
+		if (mDragView != null) {
+			WindowManager.LayoutParams layoutParams = (WindowManager.LayoutParams) mDragView.getLayoutParams();
+			layoutParams.x = x - mDragPointOffset_x;
+			layoutParams.y = y - mDragPointOffset_y;
+			mWindowManager.updateViewLayout(mDragView, layoutParams);
+
+//			if (mDragListener != null){
+//			
+//				mDragListener.onDrag(x, y, null);// change null to "this" when ready to use
+//			}
+		}
+	}
+
+}

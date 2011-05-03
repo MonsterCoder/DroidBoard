@@ -248,7 +248,16 @@ public final class HorizontalPager extends ViewGroup {
                     final float x = ev.getX();
                     final int xDiff = (int) Math.abs(x - mLastMotionX);
                     boolean xMoved = xDiff > mTouchSlop;
-
+                    
+//                    if (x < 20 && _dragdropManager.GetDragMode()) {
+//                    	scrollBy(100, 0);
+//                    }
+//                    
+//                    if (x > mLastSeenLayoutWidth -20 && _dragdropManager.GetDragMode()) {
+//                    	scrollBy(200, 0);
+//                    }
+//                    
+     
                     if (xMoved) {
                         // Scroll if the user moved far enough along the X axis
                         mTouchState = TOUCH_STATE_HORIZONTAL_SCROLLING;
@@ -345,7 +354,7 @@ public final class HorizontalPager extends ViewGroup {
                     }
                 }
                 
-                Toast.makeText(getContext(), "page move", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(getContext(), "page move", Toast.LENGTH_SHORT).show();
                 break;
 
             case MotionEvent.ACTION_UP:

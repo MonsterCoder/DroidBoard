@@ -10,3 +10,9 @@
 1304276130844	Delete element
 1304276139977	Delete element
 1304399037017	Rename field 'mDragPointOffset'
+1304450522069	Encapsulate field 'mDragView'
+1304450602051	Encapsulate field 'mStartPosition'
+1304450628805	Encapsulate field 'mStartPosition'
+1304450737100	Encapsulate field 'mDragPointOffset_y'
+1304450754303	Encapsulate field 'mDragPointOffset_x'
+1304450794892	Encapsulate field 'mEndPosition'
